@@ -11,7 +11,7 @@ require_once("../bodyTemplate.php");
 //require_once("../google.php");
 $googleSignIn = '
 
-        <script src="https://apis.google.com/js/platform.js" async defer></script>
+        <script style = ""; src="https://apis.google.com/js/platform.js" async defer></script>
         <div class="g-signin2" data-onsuccess="onSignIn"></div>
         <a href="#" onclick="signOut();">Sign out</a>
         
@@ -38,11 +38,7 @@ $googleSignIn = '
 
 
 
-
-
-
-
-$mainPanel ="
+$mainPanel = "
     <div id='main'>
       <div id='welcome'>
       <p>Welcome to RealTC, <br />
@@ -56,13 +52,13 @@ $mainPanel ="
       
       <table id='line2'>
       <tr>
-        <th>
+        <th width='250px'>
           <div id='about'>
             <p>About (Us, The Application and Our Dream)</p>
             <button type='button' onclick='showRTCOptions()' >About</button>
           </div>
         </th>
-        <th>
+        <th width='250px'>
           <div id='funding'>
             <p>To donate any money for whatsoever reason, <br/>click on the button below!</p>
             <button type='button' onclick='' >Donate Us</button>
