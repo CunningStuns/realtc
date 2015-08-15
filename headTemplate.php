@@ -1,37 +1,14 @@
 <?php
-function bodyTemplate( $mainpanel, $sidepanel){
-  echo "
-  <body>
-  <div id='headBar'>
-	    <a href='/realtc'><img src='/realtc/images/logo.jpg' alt='imgnotfound.jpg' class='mainLogo'/></a>";
-//	echo $_SERVER["DOCUMENT_ROOT"];
-//	echo realpath(dirname(__FILE__)); no longer needed
-
-	echo"</div>
-
-<div id='middle'>
-		<table id='content'>
-	    <tr>
-	      <th width='80%'><!--Empty Table Headers, since we won't need these --></th>
-	      <th width='20%'></th>
-      </tr>
-      <tr>
-	      <td id='mainview'>";
-                echo $mainpanel; // Main Control View
-            echo "</td>
-	      <td id='sideview'>";
-                echo $sidepanel; // Side bar which will be used for either signing in/up, and then for showing who is part of the workspace.
-            echo "</td>
-	    </tr>
-		</table>
-	</div>
-</div>
-
-<div id='footer'>
-	<p>Copyright &copy; 2015<br/>
-	A product of the Cunning Stunts during <a href='http://unihack.net/'>UNIHACK 2015</a></p>
-</div>
-</body>
-
+function headTemplate( $title, $description, $style, $jsFile){
+  echo "<head><script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+  <title>RealTC - Real Time Collaboration</title>";
+include $jsFile;
+if ($style){
+	echo"<style>";
+	include realpath(dirname(__FILE__)).$style;
+	echo "</style>";
+}
+echo" <meta name='google-signin-client_id' content='251993177722-sm7r5qj9sq3lrff1ao2hgeoesmjs89dj.apps.googleusercontent.com'>
+</head>
 ";
 }
