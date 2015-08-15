@@ -15,7 +15,7 @@ body {
 
 #content {  /*Table*/
   border: 0px;
-  text-align: center;
+  text-align: left;
 }
 
 #mainview {
@@ -36,4 +36,5 @@ body {
 #sideview {
   height: 100%;
   width: 30%;
+  text-align: right;
 }
