@@ -10,7 +10,7 @@ require_once("../headTemplate.php");
 require_once("../bodyTemplate.php");
 //require_once("../google.php");
 $googleSignIn = '
-
+ 
         <script  src="https://apis.google.com/js/platform.js" async defer></script>
         <div id="loginup">
           <div class="g-signin2" data-onsuccess="onSignIn"></div>
