@@ -3,8 +3,8 @@ function bodyTemplate( $mainpanel, $sidepanel){
   echo "
   <body>
   <div> id='headBar'>
-	    <a><img src='images/logo.jpg' alt='imgnotfound.jpg' /></a>";
-	    include realpath(dirname(__FILE__)) . "\\images/logo.jpg";
+	    <a><img src='images\logo.jpg' alt='imgnotfound.jpg' /></a>";
+	    include realpath(dirname(__FILE__)) . "\\images\\logo.jpg";
     echo"</div>
 
 <div id='middle'>

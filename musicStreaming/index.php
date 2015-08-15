@@ -52,6 +52,10 @@
 </head>
 
 <body>
+<script src="https://togetherjs.com/togetherjs-min.js"></script>
+<a onclick="TogetherJS(this); return false;"><img src="https://togetherjs.com/images/start-togetherjs-blue.png" style="width: 135px" /></a>
+<br/>
+<br/>
     <audio id="player" controls="controls" onplay="playMusicChanges();" onpause="pauseMusicChanges();">
         <source src="Macklemore-and-Ryan-Lewis-Growing-Up-Sloanes-Song-feat-Ed-Sheeran.mp3" type="audio/mpeg">
         Your browser does not support the audio element.

@@ -15,10 +15,10 @@ function headTemplate($title, $description, $style, $jsFile){
 <title></title>
 
 <link rel='stylesheet' type='text/css/' href='landing.css' />
-<script src=$jsFile></script>";
+<script src=$jsFile></script><style>";
         include realpath(dirname(__FILE__)) . "\\landing.css";
 
-    echo "
+    echo "</style>
 </head>
             ";
 }
