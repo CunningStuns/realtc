@@ -50,23 +50,6 @@
             button.text("PLAY ME!!!");
             button.attr("onclick", "playMusic()");
         }
-
-        // Hello is sent from every newly connected user, this way they will receive what has already been drawn:
-        TogetherJS.hub.on('togetherjs.hello', function () {
-            TogetherJS.send({
-                type: 'init'
-            });
-        });
-
-        // Draw initially received drawings:
-        TogetherJS.hub.on('init', function () {
-            console.log("HELLO!!!");
-        });
-
-        TogetherJS.hub.on('play', function () {
-            document.getElementById('player').play();
-            playMusicChanges();
-        });
     </script>
 
 </head>
@@ -74,6 +57,28 @@
 <body>
 <script src="https://togetherjs.com/togetherjs-min.js"></script>
 <a onclick="TogetherJS(this); return false;"><img src="https://togetherjs.com/images/start-togetherjs-blue.png" style="width: 135px" /></a>
+
+<script>
+
+
+    // Hello is sent from every newly connected user, this way they will receive what has already been drawn:
+    TogetherJS.hub.on('togetherjs.hello', function () {
+        TogetherJS.send({
+            type: 'init'
+        });
+    });
+
+    // Draw initially received drawings:
+    TogetherJS.hub.on('init', function () {
+        console.log("HELLO!!!");
+    });
+
+    TogetherJS.hub.on('play', function () {
+        document.getElementById('player').play();
+        playMusicChanges();
+    });
+</script>
+
 <br/>
 <br/>
     <audio id="player" controls="controls" onplay="playMusicChanges();" onpause="pauseMusicChanges();">
