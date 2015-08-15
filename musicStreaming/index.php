@@ -40,12 +40,13 @@
         
         function seekingMusic(){
             var player = document.getElementById('player');
-            if (player.paused) {
+            if (player.seeking) {
                 TogetherJS.send({
                     type: 'seek',
                     currentTime: player.currentTime
                 });
             }
+            return false;
         }
     </script>
 
@@ -102,7 +103,7 @@
 
 <br/>
 <br/>
-<audio id="player" controls="controls" onplay="playMusic();" onpause="pauseMusic();" onseeked="seekingMusic();">
+<audio id="player" controls="controls" onplay="playMusic();" onpause="pauseMusic();" onseeked="seekingMusic();" onseeking="seekingMusic();">
     <source src="falcon.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
 </audio>
