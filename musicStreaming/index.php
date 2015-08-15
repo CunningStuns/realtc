@@ -44,10 +44,11 @@
                 TogetherJS.send({
                     type: 'pause'
                 });
+                /*
                 TogetherJS.send({
                     type: 'seek',
                     currentTime: player.currentTime
-                });
+                });*/
             }
             return false;
         }
