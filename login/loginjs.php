@@ -14,6 +14,8 @@
             var selector = $("div#aboutBox" );
             console.log($("div#aboutBox").style);
             selector.css("display", "inline");
+            console.log(document.getElementById('div#aboutBox').style);
+            console.log(document.getElementById('div#aboutBox').style.display);
             console.log($("div#aboutBox").length);
             if($("div#aboutBox").length == 0){
 
