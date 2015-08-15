@@ -55,10 +55,10 @@ $mainPanel = "
       </tr>
       <tr>
         <td>
-          <button type='button' class='toggleShow' id='getstarted' href='#showOptions' onclick='showStartOptions()'>Get Started</button>
+          <button type='button' class='toggleShow' id='getstarted' href='#showOptions' onclick='";$showStartOptions=true;echo"'>Get Started</button>
         </td>
         </tr>
-        <!-- Only show the following if user clicks 'get started' button -->"
+        <!-- Only show the following if user clicks 'get started' button -->";
         if ($showStartOptions==true) {
           echo "
         <tr>
