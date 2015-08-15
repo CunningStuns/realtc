@@ -5,7 +5,7 @@
  * Date: 15/08/2015
  * Time: 3:12 PM
  */
-
+?>
 
 <script>
     $(document).on("click", "label#signUp"){
@@ -56,14 +56,14 @@
             selector[i].css("display", "none");
         }
     }
-    function showSignIn{
+    function showSignIn(){
         selector = $("input#in"){
             for(var i = 0; i < selector.length;i++){
                 selector[i].css("display", "inline");
             }
         }
     }
-    function showSignUp{
+    function showSignUp(){
         var selector = $("input#up");
         for(var i = 0; i < selector.length;i++){
             selector[i].css("display", "inline");
