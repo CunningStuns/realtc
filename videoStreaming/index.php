@@ -30,7 +30,6 @@
                     type: 'play'
                 });
             }
-            player.play();
 
             return false;
         }
@@ -42,7 +41,6 @@
                     type: 'pause'
                 });
             }
-            player.pause();
 
             return false;
         }

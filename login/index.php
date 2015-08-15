@@ -34,13 +34,7 @@ $googleSignIn = '
   
 ';
 
-<<<<<<< HEAD
 var $showStartOptions = false;
-
-=======
-
-
->>>>>>> c308949bc28ba31be8d6160aef3be99f0df72b17
 $mainPanel = "
     <div id='main'>
       <div id='welcome'>
@@ -56,7 +50,6 @@ $mainPanel = "
       </tr>
       <tr>
         <td>
-<<<<<<< HEAD
           <button type='button' onclick='".$showStartOptions=true ."'>Get Started</button>
         </td>
         <!-- Only show the following if user clicks 'get started' button -->";
@@ -76,16 +69,6 @@ $mainPanel = "
         
         echo "
               </tr>
-=======
-          <button type='button' onclick=''>Get Started</button>
-        </td>
-        <!-- Only show the following if user clicks 'get started' button -->
-        <td>
-          
-          <button type='button' onclick='openPaint()'>Paint!</button>
-        </td>
-      </tr>
->>>>>>> c308949bc28ba31be8d6160aef3be99f0df72b17
       </table>
       
       <table id='line2'>
