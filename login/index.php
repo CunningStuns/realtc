@@ -30,17 +30,17 @@ $mainPanel ="
 $bodyPanel ="
     <div>
         <br>
-        <label id='signIn'> 'signIN'</label><label id='signUp'> 'singUp'</label> </br>
+        <label id='signIn'>signIn</label><label id='signUp'> signUp</label> </br>
         
-        <label id='in email'>Email:</label>
+        <label id='in'>Email:</label>
         <input type = 'text' name='username' id='in' ></br>
-        <label id ='in password'>Password:</label>
+        <label id ='in'>Password:</label>
         <input id='in' type = 'text' name='password'  >
-        <input id='in submit'type = 'submit' value = 'sign in' id ='signUpButton'>
+        <input id='in'type = 'submit' value = 'sign in' id ='signUpButton'>
        
         
         
-        <label id='up email' display='none' >Email:</label>
+        <label id='up' display='none' >Email:</label>
         <input type = 'text' display='none' name='email' id = 'up email' >
         <label id='up password' display='none'>Password:</label>
         <input type = 'text' display='none' name='Password' id = 'up password' >

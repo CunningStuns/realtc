@@ -8,14 +8,14 @@
 ?>
 <script>
     $(document).on("click", "label#signUp"){
-        
+        console.log("inSignUp");
         hideSignIn();
         showSignUp();
         
         
     }
     $(document).on("click", "label#signIn"){
-        
+        console.log("inSignIn");
         hideSignUp();
         showSignIn();
     }
