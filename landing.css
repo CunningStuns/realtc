@@ -1,6 +1,7 @@
 
 body {
   background-color: black;  
+  
 }
 
 #headbar { /* top bar*/
@@ -9,17 +10,15 @@ body {
 
 #middle {
   background-color: white;
-  padding: 20%;
+  padding: 100px;
 }
 
 #content {  /*Table*/
-  
   border: 0px;
   text-align: center;
 }
 
 #mainview {
-  float: left;
 }
 
 #welcome {
@@ -37,5 +36,4 @@ body {
 #sideview {
   height: 100%;
   width: 30%;
-  float: right;
 }
