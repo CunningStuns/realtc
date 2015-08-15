@@ -79,6 +79,7 @@
 
     // Draw initially received drawings:
     TogetherJS.hub.on('init', function () {
+        setTimeout(pauseMusic, 2000);
         console.log("HELLO!!!");
         return false;
     });
@@ -86,16 +87,20 @@
     //changes on play
     TogetherJS.hub.on('play', function () {
         var player = document.getElementById('player');
-        if (player)
-        document.getElementById('player').play();
-        playMusicChanges();
+        if (player.paused) {
+            player.play();
+            playMusicChanges();
+        }
         return false;
     });
     
     //changes on pause
     TogetherJS.hub.on('pause', function() {
-        document.getElementById('player').pause();
-        pauseMusic();
+        var player = document.getElementById('player');
+        if (!player.paused) {
+            player.pause();
+            pauseMusic();
+        }
         return false;
     });
 </script>
