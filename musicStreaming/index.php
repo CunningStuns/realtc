@@ -69,7 +69,6 @@
     TogetherJS.hub.on('play', function (msg) {
         var player = document.getElementById('player');
         if (player.paused) {
-            player.seekTo(msg.time, true);
             player.play();
         }
         return false;
