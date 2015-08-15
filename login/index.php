@@ -35,6 +35,12 @@ $googleSignIn = '
 ';
 
 $mainPanel = "
+      <script>
+            function showStartOptions()
+            {
+            <? $showStartOptions===true; ?>
+            }
+        </script>
     <div id='main'>
       <div id='welcome'>
       <h1>Welcome to RealTC, <br />
@@ -49,15 +55,13 @@ $mainPanel = "
       </tr>
       <tr>
         <td>
-          <button type='button' class='toggleShow' id='getstarted' onclick='"; 
-          echo $showStartOptions=true; 
-          echo 
-          "'>Get Started</button>
+          <button type='button' class='toggleShow' id='getstarted' href='#showOptions' onclick='showStartOptions()'>Get Started</button>;
         </td>
+        </tr>
         <!-- Only show the following if user clicks 'get started' button -->";
-        if ($showStartOptions==true) {
+        if ($showStartOptions===true) {
           echo "
-        <tr>
+      <tr>
           <td>
             <p>Open Collaborative Paint<br />
             <button type='button' onclick='openPaint()'>Paint!</button></p>
@@ -70,7 +74,7 @@ $mainPanel = "
         }   
         
         echo "
-              </tr>
+             
       </table>
       
       <table id='line2'>
