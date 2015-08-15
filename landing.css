@@ -61,10 +61,14 @@ body {
 }
 
 #options {
+  float:center;
   margin-left: auto;
   margin-right: auto;
-  text-align:center;
   background-color:green; /******/
+}
+
+#options th {
+  text-align:center;
 }
 
 #funding {
@@ -83,7 +87,7 @@ body {
   width: 100px;
   float: right;
   text-align: center;
-  background-color: blue;
+  background-color: white;
 }
 
 #footer {
