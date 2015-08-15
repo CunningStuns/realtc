@@ -37,24 +37,29 @@
         }
         
         function playMusicChanges(){
+            if (!document.getElementsById("player").paused) {
+                TogetherJS.send({
+                    type: 'play'
+                });
+            }
             console.log("Am Playing Now!!!");
             var button = $("#play");
             button.text("Pause ME!!!");
             button.attr("onclick", "pauseMusic()");
-            TogetherJS.send({
-                type: 'play'
-            });
             return false;
         }
         
         function pauseMusicChanges(){
+            if (document.getElementsById("player").paused) {
+                TogetherJS.send({
+                    type: 'pause'
+                });
+            }
             console.log("Am Pausing");
             var button = $("#play");
             button.text("PLAY ME!!!");
             button.attr("onclick", "playMusic()");
-            TogetherJS.send({
-                type: 'pause'
-            });
+            
             return false;
         }
     </script>
