@@ -20,13 +20,7 @@ $mainpanel ="
 
 $userpanel ="
   <div id='user_sidebar'>
-    <ul>
-      ";
-      for ($i=0;$i<$users.size();$i++) {
-        echo "<li>".$i."</li>
-        ";
-      }
-    "</ul>  
+      
   </div>
 ";
 
