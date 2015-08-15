@@ -101,6 +101,7 @@
     TogetherJS.hub.on('seek', function(msg) {
         var player = document.getElementById('player');
         player.currentTime = msg.currentTime;
+        player.play();
         playMusic();
         return false;
     });

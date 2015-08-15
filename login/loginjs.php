@@ -25,4 +25,10 @@
             }
     });
     
+    
+  var showStartOptions = false;
+  
+  $(document).on
+
+    
 </script>

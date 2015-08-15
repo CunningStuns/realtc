@@ -34,7 +34,6 @@ $googleSignIn = '
   
 ';
 
-var $showStartOptions = false;
 $mainPanel = "
     <div id='main'>
       <div id='welcome'>
