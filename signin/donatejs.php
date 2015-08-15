@@ -7,4 +7,17 @@
  */
 ?>
 <script>
-    </
+    $(document).on("click", "a#payment",function(){
+        var amount= $(this).parent().attr("id")
+
+        var request = $.ajax({
+            url: "/CunningStunts/signin/paypal",
+            type: "get",
+            data: {
+                amount: amount,
+            }
+        });
+    });
+    
+</script>
+

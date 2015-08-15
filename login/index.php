@@ -20,6 +20,10 @@ $googleSignIn = '
                 console.log("Name: " + profile.getName());
                 console.log("Image URL: " + profile.getImageUrl());
                 console.log("Email: " + profile.getEmail());
+                
+                document.getElementById("getstarted").style.visibility = "hidden";
+                document.getElementById("getstartedB").disabled = "";
+                
             }
         </script>
         
@@ -41,9 +45,9 @@ $mainPanel = "
       a browser plugin which will allow for you and all your friends to collaborate in one single workspace!</h1>
       </div>
       
-      <div id='getstarted'>
+      <div id='getstarted' style='visibility:hidden'>
           <h3>To get started, click on the button below!</h3>
-          <button type='button' class='toggleShow' id='getstartedB' onclick=''>Get Started</button>
+          <button type='button' class='toggleShow' id='getstartedB' onclick='' disabled='disabled'>Get Started</button>
       </div>
       
       <table id='line2'>
