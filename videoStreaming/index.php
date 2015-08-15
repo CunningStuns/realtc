@@ -103,8 +103,8 @@
         player.currentTime = msg.currentTime;
         if (player.paused){
             player.play();
+            playMusic();
         }
-        playMusic();
         return false;
     });
 </script>
