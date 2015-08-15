@@ -3,6 +3,9 @@
   text-align: center;
 }
 
+#loginup.g-signin2 {
+  float: center;
+}
 
 .mainLogo {
   width:160;
