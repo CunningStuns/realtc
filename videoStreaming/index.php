@@ -101,10 +101,10 @@
     TogetherJS.hub.on('seek', function(msg) {
         var player = document.getElementById('player');
         player.currentTime = msg.currentTime;
-        playMusic();
         if (player.paused){
             player.play();
         }
+        playMusic();
         return false;
     });
 </script>
