@@ -68,11 +68,11 @@ $mainPanel ="
 $bodyPanel ="
     <div id='side'>
         <br>
-        <label id='signIn'>signIn</label><label id='signUp'> signUp</label> </br>
+        <label id='signIn'>signIn</label> <label id='signUp'> signUp</label> </br>
         
-        <label id='in'>Email:</label>
+        <label id='in'>Email:</label> %tab;
         <input type='text' name='username' id='in' ></br>
-        <label id='in'>Password:</label>
+        <label id='in'>Password:</label> %tab;
         <input id='in' type='text' name='password'  ></br>
         <input id='in'type='submit' value='sign in' id='signUpButton'>
         
@@ -83,10 +83,7 @@ $bodyPanel ="
         <label id='up retypepassword' style='display: none'>retype Password:</label>
         <input type='text' style='display: none' name='retypePassword' id='up retypepassword' ></br>
         <input type='submit' value='sign up' id='signInButton' >
-        ";
-        //<meta name='google-signin-client_id' content='251993177722-sm7r5qj9sq3lrff1ao2hgeoesmjs89dj.apps.googleusercontent.com'>
-        echo"
-        <a id = SignOut>Sign out</a>
+        
         " . $googleSignIn . "
     </div>
 ";
