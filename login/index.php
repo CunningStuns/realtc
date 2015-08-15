@@ -50,13 +50,14 @@ $mainPanel = "
         <th>
       </tr>
       <tr>
-        <th>
+        <td>
           <button type='button' onclick=''>Get Started</button>
-        </th>
+        </td>
         <!-- Only show the following if user clicks 'get started' button -->
-        <th>
-          <
-        </th>
+        <td>
+          
+          <button type='button' onclick='openPaint()'>Paint!</button>
+        </td>
       </tr>
       </table>
       

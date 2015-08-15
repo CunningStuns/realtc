@@ -25,9 +25,11 @@
 
         function playMusic(){
             var player = document.getElementById('player');
-            TogetherJS.send({
-                type: 'play'
-            });
+            if (!player.paused) {
+                TogetherJS.send({
+                    type: 'play'
+                });
+            }
             player.play();
 
             return false;
@@ -35,9 +37,11 @@
 
         function pauseMusic(){
             var player = document.getElementById('player');
-            TogetherJS.send({
-                type: 'pause'
-            });
+            if (player.paused) {
+                TogetherJS.send({
+                    type: 'pause'
+                });
+            }
             player.pause();
 
             return false;

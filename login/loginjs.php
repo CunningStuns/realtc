@@ -15,12 +15,12 @@
             $("div#aboutBox").css("diplay", "inline");
             if(document.getElementById("aboutBox").style.display == 'none'){
                 $("div#aboutBox").css("display", "inline");
-                console.log($("div#aboutBox"));
+                console.log($("document.getElementById('aboutBox').style.display"));
             }
             else{
                 $("div#aboutBox").css("display", "none");
                 
-                console.log($("div#aboutBox"));
+                console.log($("document.getElementById('aboutBox').style.display"));
             }
     });
     
