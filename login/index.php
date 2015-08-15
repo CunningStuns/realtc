@@ -40,10 +40,10 @@ $bodyPanel ="
         
         <label id='up' display='none' >Email:</label>
         <input type = 'text' display='none' name='email' id = 'up email' ></br>
-        <label id='up password' display='none'>Password:</label>
-        <input type = 'text' display='none' name='Password' id = 'up password' ></br>
-        <label id='up retypepassword' display='none'>retype Password:</label>
-        <input type = 'text' style = 'display=none' name='retypePassword' id = 'up retypepassword' ></br>
+        <label id='up password' style = 'display: none'>Password:</label>
+        <input type = 'text' style = 'display: none' name='Password' id = 'up password' ></br>
+        <label id='up retypepassword' style = 'display: none'>retype Password:</label>
+        <input type = 'text' style = 'display: none' name='retypePassword' id = 'up retypepassword' ></br>
         <input type ='submit' value = 'sign up' id='signInButton' >
         
     </div>
