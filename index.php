@@ -52,9 +52,9 @@ $mainPanel = "
         <h3>To get started, click on the button below!</h3>
         <button type='button' id='getstartedB' onclick='document.getElementById(\"options\").style.visibility = \"visible\"' disabled='disabled'>Get Started</button>
         <div id='options' style='visibility:hidden'>
-          <table>
-            <tr>
-              <th class='col-xs-4 col-md-4 col-lg-4' style='text-align: center;'>
+          <table style='width: 100%'>
+            <tr style='width: 100%'>
+              <th class='col-xs-4 col-md-4 col-lg-4' style='text-align: center;width: 33%'>
                 <p>Collab with Paint!<br />
                 <a href='/realtc/paintEditor/index.php'><button type='button' id='paintCollab'>Paint!</button></a></p>
               </th>
