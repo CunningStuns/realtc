@@ -58,7 +58,7 @@ $mainPanel = "
         </td>
         </tr>
         <!-- Only show the following if user clicks 'get started' button -->"
-        var showStartOptions = false;
+        var $showStartOptions = false;
         if ($showStartOptions==true) {
           echo "
         <tr>
