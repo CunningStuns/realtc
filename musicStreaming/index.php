@@ -66,6 +66,7 @@
     //changes on play
     TogetherJS.hub.on('play', function () {
         var player = document.getElementById('player');
+        var currentTime = player.currentTime;
         if (player.paused) {
             player.play();
         }
