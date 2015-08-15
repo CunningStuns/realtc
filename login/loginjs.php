@@ -11,22 +11,22 @@
         
         
         var selector = $("input#up");
-        for(var i = 0; i < seclector.length;i++){
+        for(var i = 0; i < selector.length;i++){
             selector[i].css("display", "inline");
         }
-        seclector = $("input#in"){
-            for(var i = 0; i < seclector.length;i++){
+        selector = $("input#in"){
+            for(var i = 0; i < selector.length;i++){
                 selector[i].css("display", "none");
             }
         }
     }
     $(document).on("click", "label#signIn"){
         var selector = $("input#up");
-        for(var i = 0; i < seclector.length;i++){
+        for(var i = 0; i < selector.length;i++){
             selector[i].css("display", "none");
         }
-        seclector = $("input#in"){
-            for(var i = 0; i < seclector.length;i++){
+        selector = $("input#in"){
+            for(var i = 0; i < selector.length;i++){
                 selector[i].css("display", "inline");
             }
         }
