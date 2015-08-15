@@ -13,7 +13,7 @@ function headTemplate($title, $description, $style, $jsFile){
     echo "<head>
 <title></title>
 
-<link rel='stylesheet' type='text/css/' href='C:\xampp\htdocs\realtc\landing' />
+<link rel='stylesheet' type='text/css/' href='C:/xampp/htdocs/landing' />
 <script src=$jsFile></script>
 </head>
             ";

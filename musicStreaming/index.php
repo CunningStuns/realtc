@@ -25,6 +25,12 @@
     <script>
 
         var music = document.getElementById("player");
+        
+        music.onplay = function(){
+            var button = $("#play");
+            button.text("Pause ME!!!");
+            button.attr("onclick", "pauseMusic()");
+        };
 
         $("#player").on("play", function () {
             var button = $("#play");

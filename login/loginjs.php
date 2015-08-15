@@ -6,6 +6,7 @@
  * Time: 3:12 PM
  */
 ?>
+
 <script>
     $(document).on("click", "label#signUp"){
         console.log("inSignUp");
