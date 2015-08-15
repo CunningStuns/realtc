@@ -42,6 +42,9 @@
             var player = document.getElementById('player');
             if (player.seeking) {
                 TogetherJS.send({
+                    type: 'pause'
+                });
+                TogetherJS.send({
                     type: 'seek',
                     currentTime: player.currentTime
                 });
