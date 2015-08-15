@@ -14,7 +14,7 @@
             url: "/realtc/signin/paypal",
             type: "get",
             data: {
-                amount: amount,
+                amount: amount
             }
         });
     });
