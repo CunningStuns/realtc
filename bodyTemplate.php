@@ -3,7 +3,7 @@ function bodyTemplate( $mainpanel, $sidepanel){
   echo "
   <body>
   <div id='headBar'>
-	    <a><img src='/realtc/images/logo.jpg' alt='imgnotfound.jpg' class='mainLogo'/></a>";
+	    <a href='/realtc'><img src='/realtc/images/logo.jpg' alt='imgnotfound.jpg' class='mainLogo'/></a>";
 //	echo $_SERVER["DOCUMENT_ROOT"];
 //	echo realpath(dirname(__FILE__)); no longer needed
 
@@ -35,4 +35,3 @@ function bodyTemplate( $mainpanel, $sidepanel){
 
 ";
 }
-?>
