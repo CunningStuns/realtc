@@ -13,7 +13,6 @@
             console.log("here");
             var selector = $("div#aboutBox" );
             console.log($("div#aboutBox").length == 0);
-            console.log(selector.style().display);
         
             if($("div#aboutBox").length == 0){
 
