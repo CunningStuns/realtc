@@ -75,7 +75,7 @@
 
     // Draw initially received drawings:
     TogetherJS.hub.on('init', function () {
-        setTimeout(pauseMusic, 2000);
+//        setTimeout(pauseMusic, 2000);
         console.log("HELLO!!!");
         return false;
     });
