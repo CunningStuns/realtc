@@ -9,11 +9,18 @@
 //error_reporting(E_ALL | E_STRICT);
 //ini_set('display_errors', 'On');
 function headTemplate($title, $description, $style, $jsFile){
-    echo "<head>
-<title></title>
-<link rel='stylesheet' type='text/css/' href='landing.css' />
-<script src=$jsFile></script>
+    echo "<head><script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+<title></title>";
+
+include $jsFile;
+    
+echo "<style>";
+        include realpath(dirname(__FILE__)) . $style;
+
+    echo "</style>
+    <meta name='google-signin-client_id' content='251993177722-sm7r5qj9sq3lrff1ao2hgeoesmjs89dj.apps.googleusercontent.com'>
 </head>
+
             ";
 }
 

@@ -1,7 +1,5 @@
 #loginup {
   float: right;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 #loginup.g-signin2 {
@@ -37,37 +35,19 @@ body {
   text-align: center;
 }
 
+#main {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 #mainview {
-  border:2px;
+  width:80%;
   overflow: hidden;
-  margin-left: auto;
-  margin-right: auto;
 }
 
-#line2 {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#welcome {
-  /*To the middle line of the screen*/
-  float:left;
-}
-
-#funding {
-  /*To the right of welcome <br/> the screen*/
-  float: right;
-}
-
-
-#about {
-  /*To the left of welcome <br/> the screen*/
-  float: left;
-  text-align:center;
-}
 #sideview {
   height: 100%;
-  width: 30%;
+  width: 10%;
   float: right;
   text-align: center;
 }

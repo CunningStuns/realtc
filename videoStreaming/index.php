@@ -2,11 +2,11 @@
 /**
  * Created by PhpStorm.
  * User: ProDigy SML
- * Date: 8/15/2015
- * Time: 6:23 PM
+ * Date: 8/16/2015
+ * Time: 2:06 AM
  */
 
-//error_reporting(-1);
+//error_reporting(E_ALL | E_STRICT);
 //ini_set('display_errors', 'On');
 
 ?>
@@ -21,24 +21,29 @@
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
     <script>
 
         function playMusic(){
             var player = document.getElementById('player');
-            TogetherJS.send({
-                type: 'play'
-            });
-            
+            if (!player.paused) {
+                TogetherJS.send({
+                    type: 'play'
+                });
+            }
+            player.play();
+
             return false;
         }
 
         function pauseMusic(){
             var player = document.getElementById('player');
-            TogetherJS.send({
-                type: 'pause'
-            });
-            
+            if (player.paused) {
+                TogetherJS.send({
+                    type: 'pause'
+                });
+            }
+            player.pause();
+
             return false;
         }
 
@@ -52,27 +57,7 @@
             }
             return false;
         }
-        
-//        function seekingMusic(){
-//            var player = document.getElementById('player');
-//            if (player.seeking) {
-//                if (!player.paused) {
-//                
-//                    TogetherJS.send({
-//                        type: 'pause'
-//                    });
-//                }
-//                
-//                /*
-//                TogetherJS.send({
-//                    type: 'seek',
-//                    currentTime: player.currentTime
-//                });*/
-//            }
-//            return false;
-//        }
     </script>
-
 </head>
 
 <body>
@@ -126,8 +111,8 @@
 <br/>
 <br/>
 <!-- onseeked="seekingMusic();" onseeking="seekingMusic();" -->
-<audio id="player" controls="controls" onplay="playMusic();" onpause="pauseMusic();" onseeked="seekingMusic();">
-    <source src="falcon.mp3" type="audio/mpeg">
+<video id="player" controls="controls" onplay="playMusic();" onpause="pauseMusic();" onseeked="seekingMusic();">
+    <source src="new.mp4" type="video/mp4">
     Your browser does not support the audio element.
-</audio>
+</video>
 </body>

@@ -6,66 +6,22 @@
  * Time: 3:12 PM
  */
 ?>
-<script>
-    $(document).on("click", "label#signUp"){
-        console.log("inSignUp");
-        hideSignIn();
-        showSignUp();
-        
-    }
-    $(document).on("click", "label#signIn"){
-        var login =true;
-        if(login){
-            hideSignIn();
-            hideSignUp();
-            //redirect
-        }
-        else(){
-            console.log("loginFailed");
-        }
-    }
-    $(document).on("click", "signUpButton"){
-        
-        var login =true;
-        if(login){
-            hideSignIn();
-            hideSignUp();
-            //redirect
-        }
-        else(){
-            console.log("loginFailed");
-        }
-        
-    }
-    $(document).on("click", "signInButton"){
-        hideSignIn();
-        hideSignUp();
 
-    }
-    function hideSignIn(){
-        selector = $("input#in"){
-            for(var i = 0; i < selector.length;i++){
-                selector[i].css("display", "none");
+<script>
+    $(document).on("click", "button#about",function(){
+            
+            console.log("here");
+            console.log(document.getElementById("aboutBox").style.display);
+            $("div#aboutBox").css("diplay", "inline");
+            if(document.getElementById("aboutBox").style.display == 'none'){
+                $("div#aboutBox").css("display", "inline");
+                console.log($(document.getElementById("aboutBox").style.display));
             }
-        }
-    }
-    function hideSignUp(){
-        var selector = $("input#up");
-        for(var i = 0; i < selector.length;i++){
-            selector[i].css("display", "none");
-        }
-    }
-    function showSignIn{
-        selector = $("input#in"){
-            for(var i = 0; i < selector.length;i++){
-                selector[i].css("display", "inline");
+            else{
+                $("div#aboutBox").css("display", "none");
+                
+                console.log($(document.getElementById("aboutBox").style.display));
             }
-        }
-    }
-    function showSignUp{
-        var selector = $("input#up");
-        for(var i = 0; i < selector.length;i++){
-            selector[i].css("display", "inline");
-        }
-    }
+    });
+    
 </script>
