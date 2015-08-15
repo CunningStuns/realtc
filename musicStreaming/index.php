@@ -26,9 +26,10 @@
 
         var music = document.getElementById("player");
 
-        $("#play").on("click", function () {
-            console.log("Am Playing Now!!!");
-            music.play();
+        $("#player").on("play", function () {
+            var button = $("#play");
+            button.text("Pause ME!!!");
+            button.attr("onclick", "pauseMusic()");
         });
         
         function playMusic(){

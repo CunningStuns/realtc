@@ -9,11 +9,11 @@
 //error_reporting(E_ALL | E_STRICT);
 //ini_set('display_errors', 'On');
 function headTemplate($title, $description, $style, $jsFile){
-    echo "$_SERVER["DOCUMENT_ROOT"]";
+    echo $_SERVER["DOCUMENT_ROOT"];
     echo "<head>
 <title></title>
 
-<link rel='stylesheet' type='text/css/' href='" .$_SERVER["DOCUMENT_ROOT"] ."/CunningStunts/landing' />
+<link rel='stylesheet' type='text/css/' href='C:\xampp\htdocs\realtc\landing' />
 <script src=$jsFile></script>
 </head>
             ";

@@ -23,7 +23,7 @@ $mainPanel ="
       </div>
       
       <div id='funding'>
-      <button type='button' onclick='' >Option 1</button>
+      <button type='button' onclick='' >Donate Us</button>
       <caption>To donate any money for whatsoever reason, click on the button below!</caption>
       </div>
     </div>
