@@ -27,8 +27,7 @@
         function playMusic(){
             var currentTime = document.getElementById("player").getCurrentTime();
             TogetherJS.send({
-                type: 'play',
-                time: currentTime
+                type: 'play'
             });
             return false;
         }
@@ -66,7 +65,7 @@
     });
     
     //changes on play
-    TogetherJS.hub.on('play', function (msg) {
+    TogetherJS.hub.on('play', function () {
         var player = document.getElementById('player');
         if (player.paused) {
             player.play();
