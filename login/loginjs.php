@@ -11,7 +11,7 @@
     $(document).on("click", "button#about",function(){
             
             console.log("here");
-            var selector = $("div#aboutBox" );
+            var selector = $("div#aboutBox");
             console.log($("div#aboutBox").length);
             if(document.getElementById("aboutBox").style.display == 'none'){
 
