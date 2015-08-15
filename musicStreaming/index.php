@@ -41,8 +41,8 @@
         
         function seekingMusic() {
             var player = document.getElementById('player');
-            var currentTime = player.currentTime;
             if (player.paused) {
+                var currentTime = player.currentTime;
                 TogetherJS.send({
                     type: 'seek',
                     currentTime: currentTime
@@ -72,6 +72,7 @@
     // Draw initially received drawings:
     TogetherJS.hub.on('init', function () {
         setTimeout(pauseMusic, 2000);
+        setTimeout(seekingMusic, 1000);
         console.log("HELLO!!!");
         return false;
     });
@@ -95,9 +96,11 @@
         return false;
     });
     
+    //@pre is paused
     TogetherJS.hub.on('seek', function(msg){
         var player = document.getElementById('player');
         player.currentTime = msg.currentTime;
+        player.play();
         return false;
     });
 </script>

@@ -63,6 +63,11 @@ $mainPanel = "
           </div>
         </th>
       </tr>
+      
+      <tr>
+        <th id='aboutBox'></th>
+        <th id></th>
+      </tr>
       </table>
     </div>
 ";

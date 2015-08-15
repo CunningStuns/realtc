@@ -58,6 +58,7 @@ body {
 #about {
   /*To the left of welcome <br/> the screen*/
   float: left;
+  text-align:center;
 }
 #sideview {
   height: 100%;
