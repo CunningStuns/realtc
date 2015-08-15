@@ -68,7 +68,6 @@
     // Draw initially received drawings:
     TogetherJS.hub.on('init', function () {
         setTimeout(pauseMusic, 2000);
-        setTimeout(seekingMusic, 1000);
         console.log("HELLO!!!");
         return false;
     });
@@ -101,7 +100,7 @@
 
 <br/>
 <br/>
-    <audio id="player" controls="controls" onplay="playMusic();" onpause="pauseMusic();">
+    <audio id="player" controls="controls" onplay="playMusic();" onpause="pauseMusic();" onseeked="seekingMusic();">
         <source src="falcon.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>

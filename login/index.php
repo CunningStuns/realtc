@@ -13,7 +13,6 @@ $googleSignIn = '
  
         <script  src="https://apis.google.com/js/platform.js" async defer></script>
         
-        
         <script type="text/javascript">
             function onSignIn(googleUser) {
                 var profile = googleUser.getBasicProfile();
@@ -74,9 +73,9 @@ $mainPanel = "
 ";
 $bodyPanel ="
     <div id='side'>
-    <div id=loginup">
-          <div class="g-signin2" data-onsuccess="onSignIn"></div>
-          <a href="#" onclick="signOut();">Sign out</a>
+    <div id='loginup'>
+          <div class='g-signin2' data-onsuccess='onSignIn'></div>
+          <a href='#' onclick='signOut();'>Sign out</a>
         </div>
     " . $googleSignIn . "
     </div>
