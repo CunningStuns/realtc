@@ -23,9 +23,14 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     
     <script>
+        var myaudio;
         $(document).on("ready", function(){
-            var myaudio = new Audio('Macklemore-and-Ryan-Lewis-Growing-Up-Sloanes-Song-feat-Ed-Sheeran.mp3');
+            myaudio = new Audio('Macklemore-and-Ryan-Lewis-Growing-Up-Sloanes-Song-feat-Ed-Sheeran.mp3');
         });
+        
+        $("#play").on("click", function () {
+            myaudio.play();
+        })
     </script>
 
 </head>
