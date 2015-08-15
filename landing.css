@@ -9,12 +9,12 @@
 .mainLogo {
   width:160;
   height:100;
-  text-align: center;
+  image-location: 
 }
 
 body {
   background-color: #2F4F4F;  
-  
+  text-decoration: none;
 }
 
 #headBar { /* top bar*/
@@ -67,5 +67,5 @@ body {
 
 #footer {
   background-color: white;
-  
+  text-align: center;
 }

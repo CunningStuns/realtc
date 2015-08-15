@@ -28,33 +28,11 @@ function bodyTemplate( $mainpanel, $sidepanel){
 </div>
 
 <div id='footer'>
-	<p>Copyright &copy; 2015</p>
-	<p>A product of the Cunning Stunts during <a href='http://unihack.net/'>UNIHACK 2015</a></p>
+	<p>Copyright &copy; 2015<br/>
+	A product of the Cunning Stunts during <a href='http://unihack.net/'>UNIHACK 2015</a></p>
 </div>
 </body>
 
 ";
-}
-
-function bodyTemplate2($mainPanel, $mainCSS, $sidePanel, $sideCSS){
-	echo "
-		<body>
-		  	<div id='headBar'>
-				<a><img src='realTCLogo.jpg' alt='imgnotfound.jpg' /></a>
-			</div>
-		
-			<div id='content'>
-				<table style='width:100%'  style='width:100%'>
-						<tr id = main >
-							<td style=' ".$mainCSS."'>$mainPanel</td>
-							<td style=' ".$sideCSS."'> $sidePanel</td>
-						</tr>
-			</table> 
-			
-			<div id='footer'>
-			
-		</div>
-	</body>
-	";
 }
 ?>

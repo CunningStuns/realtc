@@ -9,10 +9,17 @@
 
 <script>
     $(document).on("click", "button#about",function(){
+            
             console.log("here");
             var selector = $("div#aboutBox" );
-            console.log(selector);
-            selector.css("display", "inline");
+            if(selector.style.display="none"){
+
+                selector.css("display", "inline");
+            }
+            else{
+                selector.css("display", "none");
+            }
+            console.log(selector.style.display);
     });
     
 </script>
