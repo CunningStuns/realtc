@@ -29,9 +29,6 @@
                 type: 'play',
                 currentTime: currentTime
             });
-            document.getElementById('play').innerText = "pause";
-            
-            document.getElementById('play').onclick = pauseMusic();
             return false;
         }
         
@@ -39,10 +36,6 @@
             TogetherJS.send({
                 type: 'pause'
             });
-
-            document.getElementById('play').innerText = "Play Me!!!";
-
-            document.getElementById('play').onclick = playMusic();
             return false;
         }
         
@@ -90,6 +83,10 @@
         if (player.paused) {
             player.currentTime = msg.currentTime;
             player.play();
+
+            document.getElementById('play').innerText = "pause";
+
+            document.getElementById('play').onclick = pauseMusic();
         }
         return false;
     });
@@ -99,6 +96,10 @@
         var player = document.getElementById('player');
         if (!player.paused) {
             player.pause();
+
+            document.getElementById('play').innerText = "Play Me!!!";
+
+            document.getElementById('play').onclick = playMusic();
         }
         return false;
     });
