@@ -32,6 +32,8 @@ $googleSignIn = '
               var auth2 = gapi.auth2.getAuthInstance();
               auth2.signOut().then(function () {
                   console.log("User signed out.");
+                  document.getElementById("getstarted").style.visibility = "hidden";
+                  document.getElementById("getstartedB").disabled = "disbled";
               });
           }
         </script>
