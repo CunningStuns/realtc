@@ -1,5 +1,5 @@
 <?php
-function bodyTemplate($div, $mainpanel, $sidepanel){
+function bodyTemplate( $mainpanel, $sidepanel){
   echo "
   <body>
   <div id='headBar'>
@@ -9,17 +9,18 @@ function bodyTemplate($div, $mainpanel, $sidepanel){
 <div id='content'>
 	<div id='main'>
 		<table id='main'>
-		  <th></th>
-		  
+      
+	    <tr>
+	      <th>";
+	echo $mainpanel;
+	echo "</th>
+	      <th>";
+  echo $sidepanel;
+  echo "</th>
+	    </tr>
+	    
 		</table>
-
 	</div>
-
-	<div id='nav'>
-	  
-	  
-	</div>
-
 </div>
 
 <div id='footer'>
