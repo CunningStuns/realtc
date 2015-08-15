@@ -10,10 +10,11 @@
 //ini_set('display_errors', 'On');
 function headTemplate($title, $description, $style, $jsFile){
     echo $_SERVER["DOCUMENT_ROOT"];
+    echo realpath(dirname(__FILE__)); 
     echo "<head>
 <title></title>
 
-<link rel='stylesheet' type='text/css/' href='C:/xampp/htdocs/landing' />
+<link rel='stylesheet' type='text/css/' href='landing.css' />
 <script src=$jsFile></script>";
         include 'C:/xampp/htdocs/landing.css';
 
