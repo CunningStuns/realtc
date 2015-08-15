@@ -10,7 +10,7 @@
 //ini_set('display_errors', 'On');
 function headTemplate($title, $description, $style, $jsFile){
     echo "<head><script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
-<title></title>";
+<title>RealTC - Real Time Collaboration</title>";
 
 include $jsFile;
     
