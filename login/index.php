@@ -53,17 +53,21 @@ $mainPanel ="
       <p>To get started, click on the button below!</p>
       <button type='button' onclick=''>Get Started</button>
       </div>
+      
       <table id='line2'>
-      <tr><th><div id='about'>
-      <p>About (Us, The Application and Our Dream)</p>
-      <button type='button' onclick='showRTCOptions()' >About</button>
-      </div></th>
-      <th>
-      <div id='funding'>
-      <p>To donate any money for whatsoever reason, click on the button below!</p>
-      <button type='button' onclick='' >Donate Us</button>
-      </div>
-      </th>
+      <tr>
+        <th>
+          <div id='about'>
+            <p>About (Us, The Application and Our Dream)</p>
+            <button type='button' onclick='showRTCOptions()' >About</button>
+          </div>
+        </th>
+        <th>
+          <div id='funding'>
+            <p>To donate any money for whatsoever reason, click on the button below!</p>
+            <button type='button' onclick='' >Donate Us</button>
+          </div>
+        </th>
       </tr>
       </table>
     </div>

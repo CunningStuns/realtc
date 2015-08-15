@@ -37,7 +37,7 @@
         }
         
         function playMusicChanges(){
-            if (!document.getElementsById("player").paused) {
+            if (document.getElementsById("player").paused) {
                 TogetherJS.send({
                     type: 'play'
                 });
@@ -50,7 +50,7 @@
         }
         
         function pauseMusicChanges(){
-            if (document.getElementsById("player").paused) {
+            if (!document.getElementsById("player").paused) {
                 TogetherJS.send({
                     type: 'pause'
                 });
