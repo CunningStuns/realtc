@@ -102,5 +102,9 @@ headTemplate("Music Streaming", "Music Streaming", null, "includes.php");
 <audio id="player" controls="controls" onplay="playMusic();" onpause="pauseMusic();" onseeked="seekingMusic();">
     <source src="falcon.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
-</audio>'; ?>
+</audio>'; 
+    
+    require_once '../bodyTemplate.php'; 
+    
+    bodyTemplate($main, "");?>
 </body>
