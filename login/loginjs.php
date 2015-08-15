@@ -14,12 +14,12 @@
             var selector = $("div#aboutBox");
             console.log($("div#aboutBox").length);
             if(document.getElementById("aboutBox").style.display == 'none'){
-
-                selector.css("display", "inline");
+                $("div#aboutBox").css("display", "inline");
                 console.log("there");
             }
             else{
-                selector.css("display", "none");
+                $("div#aboutBox").css("display", "none");
+                
                 console.log("ere");
             }
     });

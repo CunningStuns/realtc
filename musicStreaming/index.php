@@ -25,16 +25,22 @@
     <script>
 
         function playMusic(){
-            TogetherJS.send({
-                type: 'play'
-            });
+            var player = document.getElementById('player');
+            if (player.paused) {
+                TogetherJS.send({
+                    type: 'play'
+                });
+            }
             return false;
         }
 
         function pauseMusic(){
-            TogetherJS.send({
-                type: 'pause'
-            });
+            var player = document.getElementById('player');
+            if (!player.paused) {
+                TogetherJS.send({
+                    type: 'pause'
+                });
+            }
             return false;
         }
 
