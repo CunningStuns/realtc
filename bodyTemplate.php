@@ -7,7 +7,6 @@ function bodyTemplate( $mainpanel, $sidepanel){
     </div>
 
 <div id='middle'>
-	<div id='main'>
 		<table id='content'>
 	    <tr>
 	      <th width='60%'><!--Empty Table Headers, since we won't need these --></th>
