@@ -39,12 +39,12 @@ $googleSignIn = '
 $mainPanel = "
     <div id='main'>
       <div id='welcome'>
-      <p>Welcome to RealTC, <br />
-      a browser plugin which will allow for you and all your friends to collaborate in one single workspace!</p>
+      <h1>Welcome to RealTC, <br />
+      a browser plugin which will allow for you and all your friends to collaborate in one single workspace!</h1>
       </div>
       
       <div id='getstarted'>
-      <p>To get started, click on the button below!</p>
+      <h3>To get started, click on the button below!</h3>
       <button type='button' onclick=''>Get Started</button>
       </div>
       
@@ -52,14 +52,15 @@ $mainPanel = "
       <tr>
         <th width='250px'>
           <div id='about'>
-            <p>About (Us, The Application and Our Dream)</p>
+            <h3>About (Us, The Application and Our Dream)</h3>
             <button id='about' type='button'>About</button>
           </div>
         </th>
         <th width='250px'>
           <div id='funding'>
-            <p>To donate any money for whatsoever reason, <br/>click on the button below!</p>
-            <button type='button' onclick='' >Donate Us</button>
+            <h4>To donate any money for whatsoever reason, <br/>click on the button below!</h4>
+            <p>And thanks :)</p>
+            <button type='button' onclick='donate.html' >Donate Us</button>
           </div>
         </th>
       </tr>

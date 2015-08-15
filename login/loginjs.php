@@ -17,7 +17,7 @@
             console.log(document.getElementById('div#aboutBox').style);
             console.log(document.getElementById('div#aboutBox').style.display);
             console.log($("div#aboutBox").length);
-            if($("div#aboutBox").length == 0){
+            if($(document.getElementById('div#aboutBox').style.display == 'none'){
 
                 selector.css("display", "inline");
             }

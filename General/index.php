@@ -6,6 +6,8 @@
  * Time: 1:10AM
  */
 
+$users = array();
+
 require_once("../headTemplate.php");
 require_once("../bodyTemplate.php");
 
