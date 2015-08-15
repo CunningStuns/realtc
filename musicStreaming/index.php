@@ -34,6 +34,17 @@
         function playMusic(){
             document.getElementById('player').play();       
             console.log("Am Playing Now!!!");
+            var button = $("#play");
+            button.text("Pause ME!!!");
+            button.attr("onclick", "pauseMusic()");
+        }
+        
+        function pauseMusic(){
+            document.getElementById("player").pause();
+            console.log("Am Pausing");
+            var button = $("#play");
+            button.text("PLAY ME!!!");
+            button.attr("onclick", "playMusic()");
         }
     </script>
 
