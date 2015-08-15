@@ -100,7 +100,7 @@ $bodyPanel ="
     </div>
 ";
 
-headTemplate("Login", "Login", "/realtc/landing.css", "/realtc/loginjs.php");
+headTemplate("Login", "Login", "./landing.css", "./loginjs.php");
 bodyTemplate($mainPanel, $bodyPanel);
 
 
