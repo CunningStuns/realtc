@@ -50,7 +50,7 @@ $mainPanel = "
       
       <div id='getstarted' style='visibility:hidden'>
         <h3>To get started, click on the button below!</h3>
-        <button type='button' id='getstartedB' onclick='document.getElementById('options').style.visibility = 'visible'' disabled='disabled'>Get Started</button>
+        <button type='button' id='getstartedB' onclick='document.getElementById(\"options\").style.visibility = \"visible\"' disabled='disabled'>Get Started</button>
         <div id='options' style='visibility:hidden'>
           <table>
             <tr>
