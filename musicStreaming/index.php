@@ -30,6 +30,11 @@
             console.log("Am Playing Now!!!");
             music.play();
         });
+        
+        function playMusic(){
+            music.play();            
+            console.log("Am Playing Now!!!");
+        }
     </script>
 
 </head>
@@ -39,5 +44,5 @@
         <source src="Macklemore-and-Ryan-Lewis-Growing-Up-Sloanes-Song-feat-Ed-Sheeran.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
-    <button id="play" onclick="music.play();">PLAY ME!!!</button>
+    <button id="play" onclick="playMusic();">PLAY ME!!!</button>
 </body>
