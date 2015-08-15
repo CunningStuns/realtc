@@ -54,7 +54,7 @@ $mainPanel = "
         <div id='options' style='visibility:hidden'>
           <table>
             <tr>
-              <th>
+              <th class='col-xs-4 col-md-4 col-lg-4' style='text-align: center;'>
                 <p>Collab with Paint!<br />
                 <a href='/realtc/paintEditor/index.php'><button type='button' id='paintCollab'>Paint!</button></a></p>
               </th>
