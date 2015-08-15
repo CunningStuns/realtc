@@ -92,8 +92,7 @@
           var auth2 = gapi.auth2.getAuthInstance();
           auth2.signOut().then(function () {
               console.log("User signed out.");
-              document.getElementById("main").style.visibility = "hidden";
-              document.getElementById("main").disabled = "disbled";
+              window.location="http://vatsalyapc:4321/realtc/login/index.php";
           });
       }
     </script>

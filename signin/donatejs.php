@@ -8,7 +8,8 @@
 ?>
 <script>
     $(document).on("click", "a#payment",function(){
-        var amount= $(this).parent().attr("id")
+        var amount= $(this).parent().attr("id");
+        $("table#donate").css("display","display: none");
 
         var request = $.ajax({
             url: "/realtc/signin/paypal.php",

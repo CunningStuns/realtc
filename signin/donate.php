@@ -24,7 +24,7 @@ $mainPanel="
             
         </tr>
         <tr>
-            <th><img src='https://www.paypal.com/en_US/i/btn/btn_xpressCheckout.gif' align='left' style='margin-right:7px;'></th>
+           
             ";
 
 echo "
@@ -32,6 +32,9 @@ echo "
         </tr>
     
     </table>
+    <div>
+        <label><img src='https://www.paypal.com/en_US/i/btn/btn_xpressCheckout.gif' align='left' style='margin-right:7px;'></label>
+    </div>
 
 ";
 headTemplate("Login", "Login", "\\landing.css", "donatejs.php");
