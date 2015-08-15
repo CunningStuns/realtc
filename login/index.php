@@ -10,11 +10,7 @@ require_once("../headTemplate.php");
 require_once("../bodyTemplate.php");
 require_once("../google.php");
 $googleSignIn = '
-<html>
-    <head>
-        <meta name="google-signin-client_id" content="251993177722-sm7r5qj9sq3lrff1ao2hgeoesmjs89dj.apps.googleusercontent.com">
-    </head>
-    <body>
+
         <script src="https://apis.google.com/js/platform.js" async defer></script>
         <div class="g-signin2" data-onsuccess="onSignIn"></div>
         <a href="#" onclick="signOut();">Sign out</a>
@@ -37,9 +33,7 @@ $googleSignIn = '
               });
           }
         </script>
-    
-    </body>
-</html>
+  
 ';
 
 

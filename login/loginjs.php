@@ -39,7 +39,7 @@
         
     });
     
-    $(document).on("click", "signUpButton", function()){
+    $(document).on("click", "signUpButton", function(){
         signOut();
     }
     $(document).on("click", "signInButton", function(){

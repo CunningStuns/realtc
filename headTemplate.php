@@ -19,6 +19,7 @@ echo "<style>";
 
     echo "</style>
 </head>
+<meta name='google-signin-client_id' content='251993177722-sm7r5qj9sq3lrff1ao2hgeoesmjs89dj.apps.googleusercontent.com'>
             ";
 }
 

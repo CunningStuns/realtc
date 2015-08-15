@@ -27,11 +27,13 @@
         function playMusic(){
             document.getElementById('player').play();       
             playMusicChanges();
+            return false;
         }
         
         function pauseMusic(){
             document.getElementById("player").pause();
             pauseMusicChanges();
+            return false;
         }
         
         function playMusicChanges(){
@@ -42,6 +44,7 @@
             TogetherJS.send({
                 type: 'play'
             });
+            return false;
         }
         
         function pauseMusicChanges(){
@@ -52,6 +55,7 @@
             TogetherJS.send({
                 type: 'pause'
             });
+            return false;
         }
     </script>
 
@@ -69,23 +73,27 @@
         TogetherJS.send({
             type: 'init'
         });
+        return false;
     });
 
     // Draw initially received drawings:
     TogetherJS.hub.on('init', function () {
         console.log("HELLO!!!");
+        return false;
     });
     
     //changes on play
     TogetherJS.hub.on('play', function () {
         document.getElementById('player').play();
         playMusicChanges();
+        return false;
     });
     
     //changes on pause
     TogetherJS.hub.on('pause', function() {
         document.getElementById('player').pause();
         pauseMusic();
+        return false;
     });
 </script>
 

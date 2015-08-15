@@ -26,21 +26,23 @@ body {
 
 #mainview {
   border:2px;
+  overflow: hidden;
 }
 
 #welcome {
   /*To the middle line of the screen*/
+  float:left;
+}
+
+#funding {
+  /*To the right of welcome <br/> the screen*/
+  float: right;
 }
 
 #about {
   /*To the left of welcome <br/> the screen*/
+  float: right;
 }
-
-
-#funding {
-  /*To the right of welcome <br/> the screen*/
-}
-
 #sideview {
   height: 100%;
   width: 30%;
