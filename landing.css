@@ -60,6 +60,11 @@ body {
   margin-right: auto;
 }
 
+#options {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 #funding {
   /*To the right of welcome <br/> the screen*/
   float: right;
