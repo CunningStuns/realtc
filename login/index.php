@@ -54,7 +54,7 @@ $bodyPanel ="
 ";
 
 headTemplate("Login", "Login", "", "index.php");
-bodyTemplete($mainPanel, $bodyPanel);
+bodyTemplate($mainPanel, $bodyPanel);
 
 
 ?>

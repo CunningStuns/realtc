@@ -63,13 +63,14 @@
         <i class="fa fa-plus-square">Increase Brush Size</i>
     </a>
     <a class="btn btn-warning clear" style="width: 15%;">
-        <i class="fa fa-times-circle"></i>
+        <i class="fa fa-times-circle">Clear Palette</i>
     </a>
     <a class="btn btn-danger minus-size" style="width: 15%;">
-        <i class="fa fa-minus-square"></i>
+        <i class="fa fa-minus-square">Decrease Brush Size</i>
     </a>
     <a class="btn btn-default eraser bottom-button" style="width: 35%; border-top-width: 0px;">
-        <i class="fa fa-eraser"></i>
+        <i class="fa fa-eraser" style="color: black">Eraser</i>
+        
     </a>
 </div>
 

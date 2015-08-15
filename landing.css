@@ -1,14 +1,12 @@
 
 
 #headBar {
-  background-color: #FFCC00;
   width: 100%;
   height: 15%;
 }
 
 #content {
   width: 100%;
-  background-color:#FFD942;
   
 
 }
@@ -22,5 +20,6 @@
 }
 
 #footer {
-  
+  width: 100%;
+  height: 8%;
 }
