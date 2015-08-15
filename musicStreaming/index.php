@@ -29,6 +29,9 @@
                 type: 'play',
                 currentTime: currentTime
             });
+            document.getElementById('play').innerText = "pause";
+            
+            document.getElementById('play').onclick = pauseMusic();
             return false;
         }
         
@@ -36,6 +39,10 @@
             TogetherJS.send({
                 type: 'pause'
             });
+
+            document.getElementById('play').innerText = "Play Me!!!";
+
+            document.getElementById('play').onclick = playMusic();
             return false;
         }
         
@@ -107,8 +114,9 @@
 
 <br/>
 <br/>
-    <audio id="player" controls="controls" onplay="playMusic();" onpause="pauseMusic();" ontimeupdate="seekingMusic();">
+    <audio id="player" onplay="playMusic();" onpause="pauseMusic();" ontimeupdate="seekingMusic();">
         <source src="falcon.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
+<button onclick="playMusic()" id="play">Play Me!!!</button>
 </body>
