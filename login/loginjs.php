@@ -12,7 +12,7 @@
             
             console.log("here");
             var selector = $("div#aboutBox" );
-            console.log($("div#aboutBox").length);
+            console.log($("div#aboutBox").style);
             selector.css("display", "inline");
             console.log($("div#aboutBox").length);
             if($("div#aboutBox").length == 0){

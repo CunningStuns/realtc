@@ -37,21 +37,36 @@
             });
             return false;
         }
-        
+
         function seekingMusic(){
             var player = document.getElementById('player');
-            if (player.seeking) {
-                TogetherJS.send({
-                    type: 'pause'
-                });
-                /*
+            if (player.paused) {
                 TogetherJS.send({
                     type: 'seek',
                     currentTime: player.currentTime
-                });*/
+                });
             }
             return false;
         }
+        
+//        function seekingMusic(){
+//            var player = document.getElementById('player');
+//            if (player.seeking) {
+//                if (!player.paused) {
+//                
+//                    TogetherJS.send({
+//                        type: 'pause'
+//                    });
+//                }
+//                
+//                /*
+//                TogetherJS.send({
+//                    type: 'seek',
+//                    currentTime: player.currentTime
+//                });*/
+//            }
+//            return false;
+//        }
     </script>
 
 </head>
@@ -74,7 +89,6 @@
     // Draw initially received drawings:
     TogetherJS.hub.on('init', function () {
         setTimeout(pauseMusic, 2000);
-        setTimeout(seekingMusic, 4000);
         console.log("HELLO!!!");
         return false;
     });
@@ -101,16 +115,15 @@
     TogetherJS.hub.on('seek', function(msg) {
         var player = document.getElementById('player');
         player.currentTime = msg.currentTime;
-        if (player.paused) {
-            playMusic();
-        }
+        playMusic();
         return false;
     });
 </script>
 
 <br/>
 <br/>
-<audio id="player" controls="controls" onplay="playMusic();" onpause="pauseMusic();" onseeked="seekingMusic();" onseeking="seekingMusic();">
+<!-- onseeked="seekingMusic();" onseeking="seekingMusic();" -->
+<audio id="player" controls="controls" onplay="playMusic();" onpause="pauseMusic();" onseeked="seekingMusic();">
     <source src="falcon.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
 </audio>
