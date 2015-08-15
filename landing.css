@@ -1,10 +1,10 @@
 
-#headbar { /* top bar*/
-  background-color: white;
-}
-
 body {
   background-color: black;  
+}
+
+#headbar { /* top bar*/
+  background-color: white;
 }
 
 #middle {

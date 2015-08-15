@@ -50,7 +50,7 @@ $bodyPanel ="
     </div>
 ";
 
-headTemplate("Login", "Login", "", "loginjs.php");
+headTemplate("Login", "Login", "\\landing.css", "loginjs.php");
 bodyTemplate($mainPanel, $bodyPanel);
 
 
