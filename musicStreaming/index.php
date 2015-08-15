@@ -39,12 +39,16 @@
             return false;
         }
         
-        function seekingMusic(){
-            var currentTime = document.getElementById('player').currentTime;
-            TogetherJS.send({
-                type: 'seek',
-                currentTime: currentTime
-            });
+        function seekingMusic() {
+            var player = document.getElementById('player');
+            var currentTime = player.currentTime;
+            if (player.paused) {
+                TogetherJS.send({
+                    type: 'seek',
+                    currentTime: currentTime
+                });
+            }
+            return false;
         }
     </script>
 
