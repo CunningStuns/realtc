@@ -15,7 +15,7 @@ function bodyTemplate( $mainpanel, $sidepanel){
 	echo $mainpanel; // Main Control View
 	echo "</th>
 	      <th>";
-  echo $sidepanel; // 
+  echo $sidepanel; // Side bar which will be used for either signing in/up, and then for showing who is part of the workspace.
   echo "</th>
 	    </tr>
 	    
@@ -31,12 +31,12 @@ function bodyTemplate( $mainpanel, $sidepanel){
 ";
 }
 
-function bodyTemplate2($mainPanel, $sidePanel){
+function bodyTemplate2($mainPanel, $mainCSS, $sidePanel, $sideCSS){
 	echo "	<table style='width:100%' border='1' style='width:100%'>
-  				<tr>
+  				<tr style=' ".$mainCSS."'>
 					<td colspan='2'>$mainPanel</td>
   				</tr>
-  				<tr>
+  				<tr style=' ".$sideCSS."'>
 					<td>$sidePanel</td>
   				</tr>
 </table> ";
