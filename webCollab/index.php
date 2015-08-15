@@ -33,6 +33,12 @@
 <a onclick="TogetherJS(this); return false;"><img src="https://togetherjs.com/images/start-togetherjs-blue.png" style="width: 135px" /></a>
 
 <iframe id="iframe" src="http://www.w3schools.com" style="width: 50%; height: 50%"></iframe>
+<script>
+    var iframe = document.getElementById('iframe');
+    
+    console.log(iframe.contentDocument || iframe.contentWindow.document);
+</script>
+
 
 <script>
 
