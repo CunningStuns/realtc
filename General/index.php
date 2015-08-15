@@ -9,7 +9,5 @@
 require_once("../headTemplate.php");
 require_once("../bodyTemplate.php");
 
-echo "
-
-";
+main
 ?>
