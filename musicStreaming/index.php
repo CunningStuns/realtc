@@ -13,6 +13,7 @@ require_once '../headTemplate.php';
 
 headTemplate("Music Streaming", "Music Streaming", "", "includes.php");
 
+
 ?>
 
 <body>
