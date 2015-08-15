@@ -22,26 +22,6 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
-    <!--
-    <style>
-        .upp            utton {
-    border-bottom-left-r            s: 0px;
-    border-bottom-right-radius: 0px;
-        }
-        .bottom-b            n {
-    border-top-left-radiu            px;
-    border-top-right-radius: 0px;
-        }
-        .black-pick:            r {
-    background-color            00;
-    border-color: #000;
-        }
-        .black            k {
-    background-color: #202020;
-            border-color: #202020;
-        }
-    </style>
-    -->
 </head>
 
 <body>
@@ -106,11 +86,13 @@
         };
         canvas.addEventListener('mousemove', move, false);
     }, false);
-
+    
+    //actions for leaving the canvas
     canvas.addEventListener('mouseout', function () {
         canvas.removeEventListener('mousemove', move, false);
     }, false);
 
+    //actions for taking off the click
     canvas.addEventListener('mouseup', function () {
         canvas.removeEventListener('mousemove', move, false);
     }, false);
@@ -285,7 +267,8 @@
             setColor($this.css("background-color"));
             changeMouse();
         });
-
+        
+        //event handler for eraser
         $('.eraser').click(function () {
             eraser();
             changeMouse();
@@ -301,7 +284,8 @@
             setSize(context.lineWidth+3);
             changeMouse();
         });
-
+        
+        //event handler for decreasing brush size
         $('.minus-size').click(function() {
             if (context.lineWidth > 3) {
                 setSize(context.lineWidth-3);

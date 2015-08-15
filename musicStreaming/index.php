@@ -23,7 +23,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
     <script>
-
+        //Sends a play command to the server
         function playMusic(){
             var player = document.getElementById('player');
             TogetherJS.send({
@@ -33,6 +33,7 @@
             return false;
         }
 
+        //Sends a pause command to the server
         function pauseMusic(){
             var player = document.getElementById('player');
             TogetherJS.send({
@@ -42,6 +43,7 @@
             return false;
         }
 
+        //Sends a seek command to the server and also sends the currentTime of the music
         function seekingMusic(){
             var player = document.getElementById('player');
             if (player.paused) {
@@ -52,25 +54,6 @@
             }
             return false;
         }
-        
-//        function seekingMusic(){
-//            var player = document.getElementById('player');
-//            if (player.seeking) {
-//                if (!player.paused) {
-//                
-//                    TogetherJS.send({
-//                        type: 'pause'
-//                    });
-//                }
-//                
-//                /*
-//                TogetherJS.send({
-//                    type: 'seek',
-//                    currentTime: player.currentTime
-//                });*/
-//            }
-//            return false;
-//        }
     </script>
 
 </head>
@@ -115,6 +98,7 @@
         return false;
     });
 
+    //changes on seek
     TogetherJS.hub.on('seek', function(msg) {
         var player = document.getElementById('player');
         player.currentTime = msg.currentTime;
@@ -125,7 +109,6 @@
 
 <br/>
 <br/>
-<!-- onseeked="seekingMusic();" onseeking="seekingMusic();" -->
 <audio id="player" controls="controls" onplay="playMusic();" onpause="pauseMusic();" onseeked="seekingMusic();">
     <source src="falcon.mp3" type="audio/mpeg">
     Your browser does not support the audio element.

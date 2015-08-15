@@ -55,22 +55,23 @@ $mainPanel = "
       </tr>
       <tr>
         <td>
-          <button type='button' class='toggleShow' id='getstarted' href='#showOptions' onclick='";$showStartOptions=true;echo"'>Get Started</button>
+          <button type='button' class='toggleShow' id='getstartedB' href='#showOptions' onclick='<script>$showStartOptions=true;</script>'>Get Started</button>
         </td>
-        </tr>
-        <!-- Only show the following if user clicks 'get started' button -->";
-        if ($showStartOptions==true) {
-          echo "
-        <tr>
-          <td>
-            <p>Open Collaborative Paint<br />
-            <button type='button' onclick='openPaint()'>Paint!</button></p>
-          </td>
-          <td>
-            <p>Open Collaborative Media Player <br />
-            <button type='button' onclick='openMediaPlayer()'>Media Player</button>
-          </td>
-        </tr>";
+      </tr>
+      
+      <!-- Only show the following if user clicks 'get started' button -->";
+      if ($showStartOptions==true) {
+        echo "
+      <tr>
+        <td>
+          <p>Open Collaborative Paint<br />
+          <button type='button' onclick='openPaint()'>Paint!</button></p>
+        </td>
+        <td>
+          <p>Open Collaborative Media Player <br />
+          <button type='button' onclick='openMediaPlayer()'>Media Player</button>
+        </td>
+      </tr>";
         }   
         
         echo "
@@ -94,16 +95,6 @@ $mainPanel = "
         </th>
       </tr>
       
-      <tr>
-        <th style='display: none'>
-            <div id='aboutBox' style='display:none'>
-                This is about
-            </div>
-        </th>
-        <th id></th>
-      </tr>
-      </table>
-    </div>
 ";
 $bodyPanel ="
     <div id='side'>

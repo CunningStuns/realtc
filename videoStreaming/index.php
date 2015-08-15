@@ -22,8 +22,8 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script>
-
-        function playMusic(){
+        //sends command to the server to play the video
+        function playVideo(){
             var player = document.getElementById('player');
             if (!player.paused) {
                 TogetherJS.send({
@@ -34,7 +34,8 @@
             return false;
         }
 
-        function pauseMusic(){
+        //sends commands to the server to pause the video
+        function pauseVideo(){
             var player = document.getElementById('player');
             if (player.paused) {
                 TogetherJS.send({
@@ -45,7 +46,8 @@
             return false;
         }
 
-        function seekingMusic(){
+        //sends commands to the server to seek the video
+        function seekingVideo(){
             var player = document.getElementById('player');
             if (player.paused) {
                 TogetherJS.send({
@@ -75,7 +77,7 @@
 
     // Draw initially received drawings:
     TogetherJS.hub.on('init', function () {
-//        setTimeout(pauseMusic, 2000);
+//        setTimeout(pauseVideo, 2000);
         console.log("HELLO!!!");
         return false;
     });
@@ -98,18 +100,18 @@
         return false;
     });
 
+    //changes on seek and also plays the video
     TogetherJS.hub.on('seek', function(msg) {
         var player = document.getElementById('player');
         player.currentTime = msg.currentTime;
-        playMusic();
+        playVideo();
         return false;
     });
 </script>
 
 <br/>
 <br/>
-<!-- onseeked="seekingMusic();" onseeking="seekingMusic();" -->
-<video id="player" controls="controls" onplay="playMusic();" onpause="pauseMusic();" onseeked="seekingMusic();">
+<video id="player" controls="controls" onplay="playVideo();" onpause="pauseVideo();" onseeked="seekingVideo();">
     <source src="new.mp4" type="video/mp4">
     Your browser does not support the audio element.
 </video>
