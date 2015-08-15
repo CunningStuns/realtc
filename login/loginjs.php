@@ -12,7 +12,6 @@
             
             console.log("here");
             var selector = $("div#aboutBox");
-            console.log($("div#aboutBox").length);
             if(document.getElementById("aboutBox").style.display == 'none'){
                 $("div#aboutBox").css("display", "inline");
                 console.log("there");

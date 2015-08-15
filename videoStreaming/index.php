@@ -26,6 +26,7 @@
         function playMusic(){
             var player = document.getElementById('player');
             if (player.paused) {
+                player.play();
                 TogetherJS.send({
                     type: 'play'
                 });
@@ -36,6 +37,7 @@
         function pauseMusic(){
             var player = document.getElementById('player');
             if (!player.paused) {
+                player.pause();
                 TogetherJS.send({
                     type: 'pause'
                 });
