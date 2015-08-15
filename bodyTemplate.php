@@ -15,11 +15,11 @@ function bodyTemplate( $mainpanel, $sidepanel){
       </tr>
       <tr>
 	      <td id='mainview'>";
-	echo $mainpanel; // Main Control View
-	echo "</td>
+                echo $mainpanel; // Main Control View
+            echo "</td>
 	      <td id='sideview'>";
-  echo $sidepanel; // Side bar which will be used for either signing in/up, and then for showing who is part of the workspace.
-  echo "</td>
+                echo $sidepanel; // Side bar which will be used for either signing in/up, and then for showing who is part of the workspace.
+            echo "</td>
 	    </tr>
 		</table>
 	</div>

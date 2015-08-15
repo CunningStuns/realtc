@@ -23,37 +23,17 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     
     <script>
-        var myaudio;
-        $(document).on("ready", function(){
-            myaudio = new Audio('Macklemore-and-Ryan-Lewis-Growing-Up-Sloanes-Song-feat-Ed-Sheeran.mp3');
-        });
         
-        $("#play").on("click", function () {
-            myaudio.play();
+        $("#player").on("play", function () {
+            console.log("Am Playing Now!!!");
         })
     </script>
 
 </head>
 
 <body>
-    <audio controls="controls">
+    <audio controls="controls" id="player">
+        <source src="Macklemore-and-Ryan-Lewis-Growing-Up-Sloanes-Song-feat-Ed-Sheeran.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
-
-    <h1>HTML 5 Audio Player</h1>
-
-    <div class="container gradient">
-
-        <div class="player gradient">
-
-            <a class="button gradient" id="play" href="" title=""></a>
-            <a class="button gradient" id="mute" href="" title=""></a>
-
-            <input type="range" id="seek" value="0" max=""/>
-
-            <a class="button gradient" id="close" href="" title=""></a>
-
-        </div><!-- / player -->
-
-    </div><!-- / Container-->
 </body>

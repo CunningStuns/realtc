@@ -38,8 +38,8 @@ $bodyPanel ="
         <input id='in' type = 'text' name='password'  ></br>
         <input id='in'type = 'submit' value = 'sign in' id ='signUpButton'>
         
-        <label id='up' display='none' >Email:</label>
-        <input type = 'text' display='none' name='email' id = 'up email' ></br>
+        <label id='up' style = 'display: none' >Email:</label>
+        <input type = 'text' style = 'display: none' name='email' id = 'up email' ></br>
         <label id='up password' style = 'display: none'>Password:</label>
         <input type = 'text' style = 'display: none' name='Password' id = 'up password' ></br>
         <label id='up retypepassword' style = 'display: none'>retype Password:</label>
