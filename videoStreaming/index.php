@@ -28,7 +28,7 @@
             TogetherJS.send({
                 type: 'play'
             });
-        
+
             return false;
         }
 
@@ -37,7 +37,7 @@
             TogetherJS.send({
                 type: 'pause'
             });
-        
+
             return false;
         }
 
@@ -51,25 +51,6 @@
             }
             return false;
         }
-
-        //        function seekingMusic(){
-        //            var player = document.getElementById('player');
-        //            if (player.seeking) {
-        //                if (!player.paused) {
-        //                
-        //                    TogetherJS.send({
-        //                        type: 'pause'
-        //                    });
-        //                }
-        //                
-        //                /*
-        //                TogetherJS.send({
-        //                    type: 'seek',
-        //                    currentTime: player.currentTime
-        //                });*/
-        //            }
-        //            return false;
-        //        }
     </script>
 </head>
 
