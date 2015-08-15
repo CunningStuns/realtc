@@ -12,9 +12,10 @@
             
             console.log("here");
             var selector = $("div#aboutBox" );
-
-            console.log(selector.style.display);
-            if(selector.style.display=="none"){
+            console.log($("div#aboutBox").length == 0));
+            console.log(selector.style().display);
+        
+            if($("div#aboutBox").length == 0)){
 
                 selector.css("display", "inline");
             }

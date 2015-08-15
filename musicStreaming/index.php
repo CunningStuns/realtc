@@ -21,17 +21,16 @@
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    
+
     <script>
+
         function playMusic(){
-            var currentTime = document.getElementById('player').currentTime;
             TogetherJS.send({
-                type: 'play',
-                currentTime: currentTime
+                type: 'play'
             });
             return false;
         }
-        
+
         function pauseMusic(){
             TogetherJS.send({
                 type: 'pause'
@@ -39,16 +38,14 @@
             return false;
         }
         
-        function seekingMusic() {
+        function seekingMusic(){
             var player = document.getElementById('player');
             if (player.paused) {
-                var currentTime = player.currentTime;
                 TogetherJS.send({
                     type: 'seek',
-                    currentTime: currentTime
+                    currentTime: player.currentTime
                 });
             }
-            return false;
         }
     </script>
 
@@ -72,52 +69,41 @@
     // Draw initially received drawings:
     TogetherJS.hub.on('init', function () {
         setTimeout(pauseMusic, 2000);
-        setTimeout(seekingMusic, 1000);
         console.log("HELLO!!!");
         return false;
     });
-    
+
     //changes on play
-    TogetherJS.hub.on('play', function (msg) {
+    TogetherJS.hub.on('play', function () {
         var player = document.getElementById('player');
         if (player.paused) {
-            player.currentTime = msg.currentTime;
             player.play();
-
-            document.getElementById('play').innerText = "pause";
-
-            document.getElementById('play').onclick = pauseMusic();
         }
         return false;
     });
-    
+
     //changes on pause
     TogetherJS.hub.on('pause', function() {
         var player = document.getElementById('player');
         if (!player.paused) {
             player.pause();
-
-            document.getElementById('play').innerText = "Play Me!!!";
-
-            document.getElementById('play').onclick = playMusic();
+            pauseMusic();
         }
         return false;
     });
-    
-    //@pre is paused
-    TogetherJS.hub.on('seek', function(msg){
+
+    TogetherJS.hub.on('seek', function(msg) {
         var player = document.getElementById('player');
         player.currentTime = msg.currentTime;
-        player.play();
+        playMusic();
         return false;
     });
 </script>
 
 <br/>
 <br/>
-    <audio id="player">
-        <source src="falcon.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-<button onclick="playMusic()" id="play">Play Me!!!</button>
+<audio id="player" controls="controls" onplay="playMusic();" onpause="pauseMusic();" onseeked="seekingMusic();">
+    <source src="falcon.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
 </body>
