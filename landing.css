@@ -78,9 +78,10 @@ body {
 
 #sideview {
   height: 100%;
-  width: 30%;
+  width: 15%;
   float: right;
   text-align: center;
+  background-color: blue;
 }
 
 #footer {
