@@ -14,13 +14,13 @@ function headTemplate($title, $description, $style, $jsFile){
 
 include $jsFile;
     
-    if ($style == "") {
+//    if ($style != "") {
 
         echo "<style>";
         include realpath(dirname(__FILE__)) . $style;
 
         echo "</style>";
-    }
+//    }
         echo "
     <meta name='google-signin-client_id' content='251993177722-sm7r5qj9sq3lrff1ao2hgeoesmjs89dj.apps.googleusercontent.com'>
 </head>
