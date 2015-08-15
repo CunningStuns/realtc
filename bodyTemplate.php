@@ -12,8 +12,8 @@ function bodyTemplate( $mainpanel, $sidepanel){
 <div id='middle'>
 		<table id='content'>
 	    <tr>
-	      <th width='60%'><!--Empty Table Headers, since we won't need these --></th>
-	      <th width='40%'></th>
+	      <th width='80%'><!--Empty Table Headers, since we won't need these --></th>
+	      <th width='20%'></th>
       </tr>
       <tr>
 	      <td id='mainview'>";
