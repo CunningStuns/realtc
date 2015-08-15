@@ -14,7 +14,10 @@ function headTemplate($title, $description, $style, $jsFile){
 <title></title>
 
 <link rel='stylesheet' type='text/css/' href='C:/xampp/htdocs/landing' />
-<script src=$jsFile></script>
+<script src=$jsFile></script>";
+        include 'C:/xampp/htdocs/landing.css';
+
+echo "
 </head>
             ";
 }
