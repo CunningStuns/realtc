@@ -47,36 +47,10 @@ $mainPanel = "
       a browser plugin which will allow for you and all your friends to collaborate in one single workspace!</h1>
       </div>
       
-      <table id='getstarted'>
-      <tr>
-        <th>
+      <div id='getstarted'>
           <h3>To get started, click on the button below!</h3>
-        <th>
-      </tr>
-      <tr>
-        <td>
           <button type='button' class='toggleShow' id='getstartedB' href='#showOptions' onclick='<script>$showStartOptions=true;</script>'>Get Started</button>
-        </td>
-      </tr>
-      
-      <!-- Only show the following if user clicks 'get started' button -->";
-      if ($showStartOptions==true) {
-        echo "
-      <tr>
-        <td>
-          <p>Open Collaborative Paint<br />
-          <button type='button' onclick='openPaint()'>Paint!</button></p>
-        </td>
-        <td>
-          <p>Open Collaborative Media Player <br />
-          <button type='button' onclick='openMediaPlayer()'>Media Player</button>
-        </td>
-      </tr>";
-        }   
-        
-        echo "
-             
-      </table>
+      </div>
       
       <table id='line2'>
       <tr>

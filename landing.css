@@ -49,15 +49,15 @@ body {
   margin-right: auto;
 }
 
+#welcome {
+  /*To the middle line of the screen*/
+  float:left;
+}
+
 #line2 {
   background-color: blue;
   margin-left: auto;
   margin-right: auto;
-}
-
-#welcome {
-  /*To the middle line of the screen*/
-  float:left;
 }
 
 #funding {
@@ -65,12 +65,12 @@ body {
   float: right;
 }
 
-
 #about {
   /*To the left of welcome <br/> the screen*/
   float: left;
   text-align:center;
 }
+
 #sideview {
   height: 100%;
   width: 30%;
