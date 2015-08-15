@@ -11,7 +11,7 @@
     $(document).on("click", "button#about",function(){
             
             console.log("here");
-            console.log($("div#aboutBox").display);
+            console.log(document.getElementById("aboutBox").style.display);
             $("div#aboutBox").css("diplay", "inline");
             if(document.getElementById("aboutBox").style.display == 'none'){
                 $("div#aboutBox").css("display", "inline");

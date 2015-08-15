@@ -28,6 +28,7 @@
             TogetherJS.send({
                 type: 'play'
             });
+            player.play();
 
             return false;
         }
@@ -37,6 +38,7 @@
             TogetherJS.send({
                 type: 'pause'
             });
+            player.pause();
 
             return false;
         }

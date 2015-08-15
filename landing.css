@@ -1,5 +1,7 @@
 #loginup {
   float: right;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #loginup.g-signin2 {
@@ -42,6 +44,11 @@ body {
   margin-right: auto;
 }
 
+#line2 {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 #welcome {
   /*To the middle line of the screen*/
   float:left;
@@ -51,6 +58,7 @@ body {
   /*To the right of welcome <br/> the screen*/
   float: right;
 }
+
 
 #about {
   /*To the left of welcome <br/> the screen*/

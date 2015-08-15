@@ -43,10 +43,22 @@ $mainPanel = "
       a browser plugin which will allow for you and all your friends to collaborate in one single workspace!</h1>
       </div>
       
-      <div id='getstarted'>
-      <h3>To get started, click on the button below!</h3>
-      <button type='button' onclick=''>Get Started</button>
-      </div>
+      <table id='getstarted'>
+      <tr>
+        <th>
+          <h3>To get started, click on the button below!</h3>
+        <th>
+      </tr>
+      <tr>
+        <th>
+          <button type='button' onclick=''>Get Started</button>
+        </th>
+        <!-- Only show the following if user clicks 'get started' button -->
+        <th>
+          <
+        </th>
+      </tr>
+      </table>
       
       <table id='line2'>
       <tr>
