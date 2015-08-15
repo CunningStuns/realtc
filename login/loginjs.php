@@ -13,7 +13,7 @@
             console.log("here");
             var selector = $("div#aboutBox" );
             
-            if(selector.style.display="none"){
+            if(selector.style.display=="none"){
 
                 selector.css("display", "inline");
             }
