@@ -43,11 +43,9 @@ function bodyTemplate2($mainPanel, $mainCSS, $sidePanel, $sideCSS){
 		
 			<div id='content'>
 				<table style='width:100%'  style='width:100%'>
-						<tr id = main style=' ".$mainCSS."'>
-							<td colspan='2'>$mainPanel</td>
-						</tr>
-						<tr style=' ".$sideCSS."'>
-							<td>$sidePanel</td>
+						<tr id = main >
+							<td style=' ".$mainCSS."'>$mainPanel</td>
+							<td style=' ".$sideCSS."'> $sidePanel</td>
 						</tr>
 			</table> 
 			
