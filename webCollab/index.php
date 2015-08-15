@@ -32,11 +32,13 @@
 <script src="https://togetherjs.com/togetherjs-min.js"></script>
 <a onclick="TogetherJS(this); return false;"><img src="https://togetherjs.com/images/start-togetherjs-blue.png" style="width: 135px" /></a>
 
-<iframe id="iframe" src="http://www.w3schools.com" style="width: 50%; height: 50%"></iframe>
+<iframe id="iframe" src="http://www.w3schools.com" style="width: 50%; height: 50%" onload="iframeAttack();"></iframe>
 <script>
-    var iframe = document.getElementById('iframe');
-    
-    console.log(iframe.contentDocument || iframe.contentWindow.document);
+    function iframeAttack() {
+        var iframe = document.getElementById('iframe');
+
+        console.log(iframe.contentDocument || iframe.contentWindow.document);
+    }
 </script>
 
 
