@@ -12,12 +12,12 @@
             
             console.log("here");
             var selector = $("div#aboutBox" );
-            console.log($("div#aboutBox"));
             selector.css("display", "inline");
+            console.log($("div#aboutBox"));
             console.log(document.getElementById('div#aboutBox').style);
             console.log(document.getElementById('div#aboutBox').style.display);
             console.log($("div#aboutBox").length);
-            if($(document.getElementById('div#aboutBox').style.display == 'none'){
+            if($(document.getElementById('div#aboutBox').style.display == 'none')){
 
                 selector.css("display", "inline");
             }
