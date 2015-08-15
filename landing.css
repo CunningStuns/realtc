@@ -1,4 +1,4 @@
-#headbar {
+#headbar { /* top bar*/
   background-color: white;
 }
 
@@ -7,20 +7,32 @@ body {
 }
 
 #middle {
-  
+  background-color: white;
+  padding: 20%;
 }
 
 #content {  /*Table*/
-  
+  border: 0px;
+  text-align: center;
 }
 
 #mainview {
+  float: left;
+}
+
+#welcome {
   
 }
 
-#welcome 
+#about {
+  
+}
+
+#funding {
+  
+}
 
 #sideview {
-  
+  float: right;
 }
 

@@ -23,45 +23,25 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     
     <script>
-
-        var music = document.getElementById("player");
-        
-        music.onplay = function(){
-            var button = $("#play");
-            button.text("Pause ME!!!");
-            button.attr("onclick", "pauseMusic()");
-        };
-
-        $("#player").on("play", function () {
-            var button = $("#play");
-            button.text("Pause ME!!!");
-            button.attr("onclick", "pauseMusic()");
-        });
         
         function playMusic(){
             document.getElementById('player').play();       
-            console.log("Am Playing Now!!!");
-            var button = $("#play");
-            button.text("Pause ME!!!");
-            button.attr("onclick", "pauseMusic()");
+            playMusicChanges();
         }
         
         function pauseMusic(){
             document.getElementById("player").pause();
-            console.log("Am Pausing");
-            var button = $("#play");
-            button.text("PLAY ME!!!");
-            button.attr("onclick", "playMusic()");
+            pauseMusicChanges();
         }
         
-        function playMusic2(){
+        function playMusicChanges(){
             console.log("Am Playing Now!!!");
             var button = $("#play");
             button.text("Pause ME!!!");
             button.attr("onclick", "pauseMusic()");
         }
         
-        function pauseMusic2(){
+        function pauseMusicChanges(){
             console.log("Am Pausing");
             var button = $("#play");
             button.text("PLAY ME!!!");
@@ -72,7 +52,7 @@
 </head>
 
 <body>
-    <audio id="player" controls="controls" onplay="playMusic2();" onpause="pauseMusic2();">
+    <audio id="player" controls="controls" onplay="playMusicChanges();" onpause="pauseMusicChanges();">
         <source src="Macklemore-and-Ryan-Lewis-Growing-Up-Sloanes-Song-feat-Ed-Sheeran.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
