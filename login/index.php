@@ -16,10 +16,12 @@ $mainPanel ="
       a browser plugin which will allow for you and all your friends to collaborate in one single workspace!</p>
       </div>
       
+      <div id='getstarted'>
+      </div>
+      
       <div id='about'>
       <button type='button' onclick='showRTCOptions()' >About</button>
       <caption>About (Us, The Application and Our Dream)</caption>
-      <caption>To get started, click on the button below!</caption>
       </div>
       
       <div id='funding'>
