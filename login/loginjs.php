@@ -8,10 +8,27 @@
 ?>
 <script>
     $(document).on("click", "label#signUp"){
-        //if it is not showing 
         
+        
+        var selector = $("input#up");
+        for(var i = 0; i < seclector.length;i++){
+            selector[i].css("display", "inline");
+        }
+        seclector = $("input#in"){
+            for(var i = 0; i < seclector.length;i++){
+                selector[i].css("display", "none");
+            }
+        }
     }
     $(document).on("click", "label#signIn"){
-        
+        var selector = $("input#up");
+        for(var i = 0; i < seclector.length;i++){
+            selector[i].css("display", "none");
+        }
+        seclector = $("input#in"){
+            for(var i = 0; i < seclector.length;i++){
+                selector[i].css("display", "inline");
+            }
+        }
     }
 </script>
