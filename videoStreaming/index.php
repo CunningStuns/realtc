@@ -21,7 +21,53 @@
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script>
 
+
+        function playMusic(){
+            TogetherJS.send({
+                type: 'play'
+            });
+            return false;
+        }
+
+        function pauseMusic(){
+            TogetherJS.send({
+                type: 'pause'
+            });
+            return false;
+        }
+
+        function seekingMusic(){
+            var player = document.getElementById('player');
+            if (player.paused) {
+                TogetherJS.send({
+                    type: 'seek',
+                    currentTime: player.currentTime
+                });
+            }
+            return false;
+        }
+
+        //        function seekingMusic(){
+        //            var player = document.getElementById('player');
+        //            if (player.seeking) {
+        //                if (!player.paused) {
+        //                
+        //                    TogetherJS.send({
+        //                        type: 'pause'
+        //                    });
+        //                }
+        //                
+        //                /*
+        //                TogetherJS.send({
+        //                    type: 'seek',
+        //                    currentTime: player.currentTime
+        //                });*/
+        //            }
+        //            return false;
+        //        }
+    </script>
 </head>
 
 <body>
@@ -44,13 +90,41 @@
         console.log("HELLO!!!");
         return false;
     });
+
+
+
+    //changes on play
+    TogetherJS.hub.on('play', function () {
+        var player = document.getElementById('player');
+        if (player.paused) {
+            player.play();
+        }
+        return false;
+    });
+
+    //changes on pause
+    TogetherJS.hub.on('pause', function() {
+        var player = document.getElementById('player');
+        if (!player.paused) {
+            player.pause();
+            pauseMusic();
+        }
+        return false;
+    });
+
+    TogetherJS.hub.on('seek', function(msg) {
+        var player = document.getElementById('player');
+        player.currentTime = msg.currentTime;
+        playMusic();
+        return false;
+    });
 </script>
 
 <br/>
 <br/>
 <!-- onseeked="seekingMusic();" onseeking="seekingMusic();" -->
 <video id="player" controls="controls" onplay="playMusic();" onpause="pauseMusic();" onseeked="seekingMusic();">
-    <source src="falcon.mp3" type="audio/mpeg">
+    <source src="new.mp4" type="video/mp4">
     Your browser does not support the audio element.
 </video>
 </body>
