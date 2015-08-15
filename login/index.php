@@ -66,7 +66,7 @@ $mainPanel = "
       </tr>
       
       <tr>
-        <th id='aboutBox' style='display: none'>
+        <th style='display: none'>
             <div id='aboutBox' style='display:none'>
                 This is about
             </div>

@@ -23,7 +23,7 @@ $userpanel ="
   </div>
 ";
 
-headTemplate("Login", "Login", "\\general.css", "loginjs.php");
+headTemplate("Login", "Login", "\\general.css", "\login\loginjs.php");
 bodyTemplate($mainpanel, $userpanel);
 
 ?>
