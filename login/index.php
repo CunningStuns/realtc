@@ -49,7 +49,7 @@ $mainPanel = "
       
       <div id='getstarted' style='visibility:hidden'>
           <h3>To get started, click on the button below!</h3>
-          <button type='button' class='toggleShow' id='getstartedB' onclick='' disabled='disabled'>Get Started</button>
+          <button type='button' class='toggleShow' id='getstartedB' onclick='document.' disabled='disabled'>Get Started</button>
       </div>
       
       <table id='line2'>

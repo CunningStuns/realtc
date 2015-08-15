@@ -11,7 +11,7 @@
         var amount= $(this).parent().attr("id")
 
         var request = $.ajax({
-            url: "/CunningStunts/signin/paypal",
+            url: "/realtc/signin/paypal",
             type: "get",
             data: {
                 amount: amount,

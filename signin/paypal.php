@@ -33,8 +33,8 @@ $newAmount = Input::get("amount");
 			value=Sale>
 		<input name=PAYMENTREQUEST_0_AMT value=19.95>
 		<input type=hidden name=RETURNURL
-			value=https://www.YourReturnURL.com>
+			value=/realtc/login/index.php>
 		<input type=hidden name=CANCELURL
-			value=https://www.YourCancelURL.com>
+			value=/realtc/signin/donate.php>
 		<input type=submit name=METHOD value=SetExpressCheckout>
 	</form>

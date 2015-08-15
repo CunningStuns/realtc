@@ -58,15 +58,50 @@
             return false;
         }
     </script>
+    
+    <script  src="https://apis.google.com/js/platform.js" async defer></script>
+        
+    <? $googleSignIn = ' 
+    <script type="text/javascript">
+        function onSignIn(googleUser) {
+            var profile = googleUser.getBasicProfile();
+            console.log("ID: " + profile.getId()); // Do not send to your backend! Use an ID token instead.
+            console.log("Name: " + profile.getName());
+            console.log("Image URL: " + profile.getImageUrl());
+            console.log("Email: " + profile.getEmail());
+            
+            document.getElementById("main").style.visibility = "visible";
+            document.getElementById("main").disabled = "";
+            
+        }
+    </script>
+    
+    <script>
+      function signOut() {
+          var auth2 = gapi.auth2.getAuthInstance();
+          auth2.signOut().then(function () {
+              console.log("User signed out.");
+              document.getElementById("main").style.visibility = "hidden";
+              document.getElementById("main").disabled = "disbled";
+          });
+      }
+    </script>' ?>
 </head>
 
 <body>
+<div id='main' style='visibility:visible' disabled=''>
 <script src="https://togetherjs.com/togetherjs-min.js"></script>
 <a onclick="TogetherJS(this); return false;"><img src="https://togetherjs.com/images/start-togetherjs-blue.png" style="width: 135px" /></a>
 
 <script>
 
-
+    <div id='side'>
+      <div id='loginup'>
+            <div class='g-signin2' data-onsuccess='onSignIn'></div>
+            <a href='#' onclick='signOut();'>Sign out</a>
+          </div>
+      " . $googleSignIn . "
+      </div>
     // Hello is sent from every newly connected user, this way they will receive what has already been drawn:
     TogetherJS.hub.on('togetherjs.hello', function () {
         TogetherJS.send({
@@ -115,4 +150,7 @@
     <source src="new.mp4" type="video/mp4">
     Your browser does not support the audio element.
 </video>
+
+
+</div>
 </body>
