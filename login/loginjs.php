@@ -21,7 +21,7 @@
             hideSignUp();
             //redirect
         }
-        else(){
+        else{
             console.log("loginFailed");
         }
     });

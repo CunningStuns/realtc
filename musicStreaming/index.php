@@ -49,6 +49,9 @@
             var button = $("#play");
             button.text("PLAY ME!!!");
             button.attr("onclick", "playMusic()");
+            TogetherJS.send({
+                type: 'pause'
+            });
         }
     </script>
 
@@ -72,10 +75,17 @@
     TogetherJS.hub.on('init', function () {
         console.log("HELLO!!!");
     });
-
+    
+    //changes on play
     TogetherJS.hub.on('play', function () {
         document.getElementById('player').play();
         playMusicChanges();
+    });
+    
+    //changes on pause
+    TogetherJS.hub.on('pause', function() {
+        document.getElementById('player').pause();
+        pauseMusic();
     });
 </script>
 
