@@ -6,12 +6,12 @@ function bodyTemplate( $mainpanel, $sidepanel){
 	    <a><img src='realTCLogo.jpg' alt='imgnotfound.jpg' /></a>
     </div>
 
-<div id='content'>
+<div id='middle'>
 	<div id='main'>
-		<table id='main'>
+		<table id='content'>
 	    <tr>
-	      <th><!--Empty Table Headers, since we won't need these --></th>
-	      <th></th>
+	      <th width='60%'><!--Empty Table Headers, since we won't need these --></th>
+	      <th width='40%'></th>
       </tr>
       <tr>
 	      <td id='mainview'>";

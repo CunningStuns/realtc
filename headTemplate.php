@@ -11,7 +11,7 @@
 function headTemplate($title, $description, $style, $jsFile){
     echo "<head>
 <title></title>
-<link rel='stylesheet' type='text/css/' href=" .$_SERVER["DOCUMENT_ROOT"] ."'/landing' />
+<link rel='stylesheet' type='text/css/' href='" .$_SERVER["DOCUMENT_ROOT"] ."/landing' />
 <script src=$jsFile></script>
 </head>
             ";

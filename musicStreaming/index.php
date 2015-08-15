@@ -32,7 +32,7 @@
         });
         
         function playMusic(){
-            music.play();            
+            document.getElementById('player').play();       
             console.log("Am Playing Now!!!");
         }
     </script>
