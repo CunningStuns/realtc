@@ -12,9 +12,11 @@ function headTemplate($title, $description, $style, $jsFile){
     echo $_SERVER["DOCUMENT_ROOT"];
     echo realpath(dirname(__FILE__)); 
     echo "<head>
-<title></title>
+<title></title>";
 
-<script src=$jsFile></script><style>";
+include $jsFile;
+    
+echo "<style>";
         include realpath(dirname(__FILE__)) . $style;
 
     echo "</style>
