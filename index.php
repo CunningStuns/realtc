@@ -6,8 +6,8 @@
  * Time: 2:55 PM
  */
 
-require_once("/realtc/headTemplate.php");
-require_once("/realtc/bodyTemplate.php");
+require_once("./headTemplate.php");
+require_once("./bodyTemplate.php");
 //require_once("../google.php");
 $googleSignIn = '
  
