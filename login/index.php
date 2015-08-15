@@ -9,6 +9,45 @@
 require_once("../headTemplate.php");
 require_once("../bodyTemplate.php");
 
+$googleSignIn = '
+<html>
+    <head>
+        <meta name="google-signin-client_id" content="251993177722-sm7r5qj9sq3lrff1ao2hgeoesmjs89dj.apps.googleusercontent.com">
+    </head>
+    <body>
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+        <div class="g-signin2" data-onsuccess="onSignIn"></div>
+        <a href="#" onclick="signOut();">Sign out</a>
+        
+        <script type="text/javascript">
+            function onSignIn(googleUser) {
+                var profile = googleUser.getBasicProfile();
+                console.log("ID: " + profile.getId()); // Do not send to your backend! Use an ID token instead.
+                console.log("Name: " + profile.getName());
+                console.log("Image URL: " + profile.getImageUrl());
+                console.log("Email: " + profile.getEmail());
+            }
+        </script>
+        
+        <script>
+          function signOut() {
+              var auth2 = gapi.auth2.getAuthInstance();
+              auth2.signOut().then(function () {
+                  console.log("User signed out.");
+              });
+          }
+        </script>
+    
+    </body>
+</html>
+';
+
+
+
+
+
+
+
 $mainPanel ="
     <div id='main'>
       <div id='welcome'>
@@ -22,13 +61,13 @@ $mainPanel ="
       </div>
       
       <div id='about'>
-      <button type='button' onclick='showRTCOptions()' >About</button>
       <p>About (Us, The Application and Our Dream)</p>
+      <button type='button' onclick='showRTCOptions()' >About</button>
       </div>
       
       <div id='funding'>
-      <button type='button' onclick='' >Donate Us</button>
       <p>To donate any money for whatsoever reason, click on the button below!</p>
+      <button type='button' onclick='' >Donate Us</button>
       </div>
     </div>
 ";
@@ -50,7 +89,11 @@ $bodyPanel ="
         <label id='up retypepassword' style='display: none'>retype Password:</label>
         <input type='text' style='display: none' name='retypePassword' id='up retypepassword' ></br>
         <input type='submit' value='sign up' id='signInButton' >
-        
+        ";
+        //<meta name='google-signin-client_id' content='251993177722-sm7r5qj9sq3lrff1ao2hgeoesmjs89dj.apps.googleusercontent.com'>
+        echo"
+        <a id = SignOut>Sign out</a>
+        " . $googleSignIn . "
     </div>
 ";
 
