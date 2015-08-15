@@ -25,7 +25,6 @@
     <script>
         
         function playMusic(){
-            var currentTime = document.getElementById("player").getCurrentTime();
             TogetherJS.send({
                 type: 'play'
             });
