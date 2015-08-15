@@ -23,17 +23,21 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     
     <script>
-        
-        $("#player").on("play", function () {
+
+        var music = document.getElementById("player");
+
+        $("#play").on("click", function () {
             console.log("Am Playing Now!!!");
+            music.play();
         })
     </script>
 
 </head>
 
 <body>
-    <audio controls="controls" id="player">
+    <audio id="player">
         <source src="Macklemore-and-Ryan-Lewis-Growing-Up-Sloanes-Song-feat-Ed-Sheeran.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
+    <button id="play">PLAY ME!!!</button>
 </body>
