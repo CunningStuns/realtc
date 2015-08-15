@@ -22,6 +22,10 @@
     $(document).on("click", "signUpButton"){
         hideSignIn();
         hideSignUp();
+        var login =true;
+        if(login){
+            
+        }
         
     }
     $(document).on("click", "signInButton"){
