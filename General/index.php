@@ -11,14 +11,14 @@ $users = array("Ray", "Sajeeb", "Stephanie", "Vatsalya");
 require_once("../headTemplate.php");
 require_once("../bodyTemplate.php");
 
-$mainpanel="
+$mainpanel ="
   <div id='main'>
       //.generateIFrame.
     blah main blah
     </div>
 ";
 
-$userpanel="
+$userpanel ="
   <div id='user_sidebar'>
     <ul>
       ";
@@ -31,7 +31,7 @@ $userpanel="
 ";
 
 headTemplate("Login", "Login", "\\general.css", "loginjs.php");
-bodyTemplate($mainPanel, $bodyPanel);
+bodyTemplate($mainpanel, $userpanel);
 
 ?>
 
