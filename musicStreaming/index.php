@@ -39,6 +39,9 @@
             var button = $("#play");
             button.text("Pause ME!!!");
             button.attr("onclick", "pauseMusic()");
+            TogetherJS.send({
+                type: 'play'
+            });
         }
         
         function pauseMusicChanges(){
@@ -48,9 +51,21 @@
             button.attr("onclick", "playMusic()");
         }
 
-        TogetherJS.hub.on('play', function (msg) {
-            reDraw(msg.lines);
-            lines = msg.lines;
+        // Hello is sent from every newly connected user, this way they will receive what has already been drawn:
+        TogetherJS.hub.on('togetherjs.hello', function () {
+            TogetherJS.send({
+                type: 'init'
+            });
+        });
+
+        // Draw initially received drawings:
+        TogetherJS.hub.on('init', function () {
+            console.log("HELLO!!!");
+        });
+
+        TogetherJS.hub.on('play', function () {
+            document.getElementById('player').play();
+            playMusicChanges();
         });
     </script>
 
