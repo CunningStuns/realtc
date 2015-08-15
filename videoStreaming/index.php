@@ -105,7 +105,6 @@
         var player = document.getElementById('player');
         if (!player.paused) {
             player.pause();
-            pauseMusic();
         }
         return false;
     });
