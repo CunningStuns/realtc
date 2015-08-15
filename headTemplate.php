@@ -23,8 +23,3 @@ echo "<style>";
 
             ";
 }
-
-
-function tailTemple(){
-    
-}
