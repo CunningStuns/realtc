@@ -10,8 +10,8 @@
 <script>
     $(document).on("click", "button#about",function(){
             console.log("here");
-            var selector = $("input#aboutBox" );
-
+            var selector = $("div#aboutBox" );
+            console.log(selector);
             selector.css("display", "inline");
     });
     
