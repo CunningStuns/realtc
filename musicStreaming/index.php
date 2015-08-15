@@ -21,6 +21,12 @@
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    
+    <script>
+        $(document).on("ready", function(){
+            
+        });
+    </script>
 
 </head>
 
@@ -30,8 +36,7 @@
 
 
 <audio controls="controls">
-    <source src="track.ogg" type="audio/ogg" />
-    <source src="track.mp3" type="audio/mpeg" />
+    <source src="Macklemore-and-Ryan-Lewis-Growing-Up-Sloanes-Song-feat-Ed-Sheeran.mp3" type="audio/mpeg" />
     Your browser does not support the audio element.
 </audio>
 

@@ -45,6 +45,7 @@
 </head>
 
 <body>
+<script src="scripts/fblogin.js"></script>
 <script src="https://togetherjs.com/togetherjs-min.js"></script>
 <a onclick="TogetherJS(this); return false;"><img src="https://togetherjs.com/images/start-togetherjs-blue.png" style="width: 135px" /></a>
 
@@ -72,6 +73,13 @@
         <i class="fa fa-eraser" style="color: black">Eraser</i>
         
     </a>
+
+    <div
+      class="fb-like"
+      data-share="true"
+      data-width="450"
+      data-show-faces="true">
+    </div>
 </div>
 
 <script>
