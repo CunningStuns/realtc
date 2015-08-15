@@ -65,7 +65,9 @@ $mainPanel = "
       </tr>
       
       <tr>
-        <th id='aboutBox'></th>
+        <th id='aboutBox'>
+        Th
+</th>
         <th id></th>
       </tr>
       </table>
