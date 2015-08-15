@@ -37,11 +37,9 @@
         }
         
         function playMusicChanges(){
-            if (document.getElementsById("player").paused) {
-                TogetherJS.send({
-                    type: 'play'
-                });
-            }
+            TogetherJS.send({
+                type: 'play'
+            });
             console.log("Am Playing Now!!!");
             var button = $("#play");
             button.text("Pause ME!!!");
@@ -50,11 +48,9 @@
         }
         
         function pauseMusicChanges(){
-            if (!document.getElementsById("player").paused) {
-                TogetherJS.send({
-                    type: 'pause'
-                });
-            }
+            TogetherJS.send({
+                type: 'pause'
+            });
             console.log("Am Pausing");
             var button = $("#play");
             button.text("PLAY ME!!!");

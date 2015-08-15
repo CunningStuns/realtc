@@ -64,7 +64,7 @@ $mainPanel ="
         </th>
         <th>
           <div id='funding'>
-            <p>To donate any money for whatsoever reason, click on the button below!</p>
+            <p>To donate any money for whatsoever reason, <br/>click on the button below!</p>
             <button type='button' onclick='' >Donate Us</button>
           </div>
         </th>
