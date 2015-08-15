@@ -38,18 +38,18 @@ $bodyPanel ="
         <label id='signIn'>signIn</label><label id='signUp'> signUp</label> </br>
         
         <label id='in'>Email:</label>
-        <input type = 'text' name='username' id='in' ></br>
-        <label id ='in'>Password:</label>
-        <input id='in' type = 'text' name='password'  ></br>
-        <input id='in'type = 'submit' value = 'sign in' id ='signUpButton'>
+        <input type='text' name='username' id='in' ></br>
+        <label id='in'>Password:</label>
+        <input id='in' type='text' name='password'  ></br>
+        <input id='in'type='submit' value='sign in' id='signUpButton'>
         
-        <label id='up' style = 'display: none' >Email:</label>
-        <input type = 'text' style = 'display: none' name='email' id = 'up email' ></br>
-        <label id='up password' style = 'display: none'>Password:</label>
-        <input type = 'text' style = 'display: none' name='Password' id = 'up password' ></br>
-        <label id='up retypepassword' style = 'display: none'>retype Password:</label>
-        <input type = 'text' style = 'display: none' name='retypePassword' id = 'up retypepassword' ></br>
-        <input type ='submit' value = 'sign up' id='signInButton' >
+        <label id='up' style='display: none' >Email:</label>
+        <input type='text' style='display: none' name='email' id='up email' ></br>
+        <label id='up password' style='display: none'>Password:</label>
+        <input type='text' style='display: none' name='Password' id='up password' ></br>
+        <label id='up retypepassword' style='display: none'>retype Password:</label>
+        <input type='text' style='display: none' name='retypePassword' id='up retypepassword' ></br>
+        <input type='submit' value='sign up' id='signInButton' >
         
     </div>
 ";

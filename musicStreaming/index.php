@@ -47,6 +47,11 @@
             button.text("PLAY ME!!!");
             button.attr("onclick", "playMusic()");
         }
+
+        TogetherJS.hub.on('play', function (msg) {
+            reDraw(msg.lines);
+            lines = msg.lines;
+        });
     </script>
 
 </head>
