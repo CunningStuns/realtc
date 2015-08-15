@@ -1,5 +1,4 @@
 #loginup {
-  float: center;
   text-align: center;
 }
 
@@ -10,6 +9,7 @@
 .mainLogo {
   width:160;
   height:100;
+  text-align: center;
 }
 
 body {

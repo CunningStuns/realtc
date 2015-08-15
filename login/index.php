@@ -58,7 +58,9 @@ $mainPanel = "
           <div id='about'>
             <p>About (Us, The Application and Our Dream)</p>
             <button id = 'about' type='button'>About</button>
-            <div class='boxed' style='display: none' id='aboutBox' >
+            
+            <div><br class='boxed' style='display: none' id='aboutBox' >
+              </br>
               hello.... we are us.xdcfynjokml;xdctfiybhunjokplcgfvhkiocdgfvyhj xdctfgvkmldt fguihjovguo  fghij;kl fghl;j
             </div>
           </div>
