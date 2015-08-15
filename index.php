@@ -49,11 +49,11 @@
 <a onclick="TogetherJS(this); return false;"><img src="https://togetherjs.com/images/start-togetherjs-blue.png" style="width: 135px" /></a>
 
 <div class="btn-group btn-group-justified" style="margin-right: auto; margin-top: 10px; width: 70%;">
-    <a class="btn color-picker upper-button" style="background-color: blue">Blue</a>
-    <a class="btn color-picker" style="background-color: green;">Green</a>
-    <a class="btn color-picker" style="background-color: yellow">Yellow</a>
-    <a class="btn color-picker red-pick" style="background-color: red">Red</a>
-    <a class="btn color-picker black-pick upper-button" style="border-bottom-width: 0px; background-color: black">Black</a>
+    <a class="btn color-picker upper-button" style="background-color: blue; color: white">Blue</a>
+    <a class="btn color-picker" style="background-color: green; color: white">Green</a>
+    <a class="btn color-picker" style="background-color: yellow; color: black;">Yellow</a>
+    <a class="btn color-picker red-pick" style="background-color: red; color: white">Red</a>
+    <a class="btn color-picker black-pick upper-button" style="border-bottom-width: 0px; background-color: black; color: white">Black</a>
 </div>
 <div class="clearfix"></div>
 <div id="sketchContainer" style="width: 70%; height: 300px; border: 1px solid rgba(0,0,0,0.2)"><canvas id="sketch"></canvas></div>

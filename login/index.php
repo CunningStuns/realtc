@@ -6,6 +6,8 @@
  * Time: 2:55 PM
  */
 
+require_once("../headTemplate.php");
+require_once("../bodyTemplate.php");
 
 $mainPanel ="
 
@@ -17,10 +19,6 @@ $mainPanel ="
     <div id='about'>
     <button type='button' onclick='showRTCOptions()' >About</button>
     <caption>About (Us, The Application and Our Dream)</caption>
-    </div>
-    
-    <div id='getstarted'>
-    <button type='button' onclick='' >Get Started</button>
     <caption>To get started, click on the button below!</caption>
     </div>
     
@@ -38,7 +36,8 @@ $bodyPanel ="
         <input type = 'text' name='username' id='in' ></br>
         <label id ='in password'>Password:</label>
         <input id='in' type = 'text' name='password'  >
-        <input id='in submit'type = 'submit' value = 'sign in'>
+        <input id='in submit'type = 'submit' value = 'sign in' id ='signUpButton'>
+       
         
         
         <label id='up email' display='none' >Email:</label>
@@ -47,14 +46,15 @@ $bodyPanel ="
         <input type = 'text' display='none' name='Password' id = 'up password' >
         <label id='up retypepassword' display='none'>retype Password:</label>
         <input type = 'text' display='none' name='retypePassword' id = 'up retypepassword' >
-        <input type ='submit' value = 'sign up'>
+        <input type ='submit' value = 'sign up' id='signInButton' >
         
     </div>
 
 
 ";
 
-headTemplate("Login", "Login", "", "index.php")
+headTemplate("Login", "Login", "", "index.php");
+bodyTemplete($mainPanel, $bodyPanel);
 
 
 ?>

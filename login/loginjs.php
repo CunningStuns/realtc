@@ -31,4 +31,7 @@
             }
         }
     }
+    $(document).on("click", "signUp"){
+        
+    }
 </script>
