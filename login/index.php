@@ -38,7 +38,7 @@ $mainPanel = "
       <script>
             function showStartOptions()
             {
-            <? $showStartOptions===true; ?>
+            <? $showStartOptions==true; ?>
             }
         </script>
     <div id='main'>
@@ -59,9 +59,9 @@ $mainPanel = "
         </td>
         </tr>
         <!-- Only show the following if user clicks 'get started' button -->";
-        if ($showStartOptions===true) {
+        if ($showStartOptions==true) {
           echo "
-      <tr>
+        <tr>
           <td>
             <p>Open Collaborative Paint<br />
             <button type='button' onclick='openPaint()'>Paint!</button></p>
