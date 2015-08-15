@@ -12,10 +12,10 @@ function bodyTemplate( $mainpanel, $sidepanel){
       
 	    <tr>
 	      <th>";
-	echo $mainpanel;
+	echo $mainpanel; // Main Control View
 	echo "</th>
 	      <th>";
-  echo $sidepanel;
+  echo $sidepanel; // 
   echo "</th>
 	    </tr>
 	    
