@@ -17,18 +17,18 @@ $mainPanel ="
       </div>
       
       <div id='getstarted'>
-      <caption>To get started, click on the button below!</caption>
+      <p>To get started, click on the button below!</p>
       <button type='button' onclick=''>Get Started</button>
       </div>
       
       <div id='about'>
       <button type='button' onclick='showRTCOptions()' >About</button>
-      <caption>About (Us, The Application and Our Dream)</caption>
+      <p>About (Us, The Application and Our Dream)</p>
       </div>
       
       <div id='funding'>
       <button type='button' onclick='' >Donate Us</button>
-      <caption>To donate any money for whatsoever reason, click on the button below!</caption>
+      <p>To donate any money for whatsoever reason, click on the button below!</p>
       </div>
     </div>
 ";

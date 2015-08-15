@@ -21,8 +21,9 @@ body {
 }
 
 #mainview {
+  
 }
-
+/*
 #welcome {
   
 }
@@ -31,12 +32,17 @@ body {
   
 }
 
+
 #funding {
   
-}
+} */
 
 #sideview {
   height: 100%;
   width: 30%;
   float: right;
+}
+
+#footer {
+  background-color: white;
 }

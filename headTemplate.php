@@ -9,8 +9,6 @@
 //error_reporting(E_ALL | E_STRICT);
 //ini_set('display_errors', 'On');
 function headTemplate($title, $description, $style, $jsFile){
-    echo $_SERVER["DOCUMENT_ROOT"];
-    echo realpath(dirname(__FILE__)); 
     echo "<head>
 <title></title>";
 
