@@ -3,7 +3,7 @@ function bodyTemplate( $mainpanel, $sidepanel){
   echo "
   <body>
   <div> id='headBar'>
-	    <a><img src='" . glob($_SERVER['DOCUMENT_ROOT']) . "\\images\\logo.jpg" . " alt='imgnotfound.jpg' /></a>";
+	    <a><img src='" . glob($_SERVER['DOCUMENT_ROOT']) . "\\images\\logo.jpg \"" . " alt='imgnotfound.jpg' /></a>";
     echo realpath($_SERVER['DOCUMENT_ROOT']);
     
     echo"</div>

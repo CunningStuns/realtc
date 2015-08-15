@@ -16,7 +16,7 @@ body {
 
 #content {  /*Table*/
   border: 3px;
-  text-align: left;
+  float: left;
 }
 
 #mainview {
