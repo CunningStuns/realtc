@@ -53,7 +53,7 @@ $bodyPanel ="
 
 ";
 
-headTemplate("Login", "Login", "", "index.php");
+headTemplate("Login", "Login", "", "loginjs.php");
 bodyTemplate($mainPanel, $bodyPanel);
 
 
