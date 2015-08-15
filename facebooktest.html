@@ -7,6 +7,7 @@
 <body>
 <script>
   // This is called with the results from from FB.getLoginStatus().
+  console.log("running")
   function statusChangeCallback(response) {
     console.log('statusChangeCallback');
     console.log(response);
@@ -43,7 +44,7 @@
       appId      : '1183492138333175',
       cookie     : true, 
       xfbml      : true,
-      version    : 'v2.4'
+      version    : 'v2.2'
     });
 
   // Now that we've initialized the JavaScript SDK, we call 

@@ -12,19 +12,28 @@
         hideSignIn();
         showSignUp();
         
-        
     }
     $(document).on("click", "label#signIn"){
-        console.log("inSignIn");
-        hideSignUp();
-        showSignIn();
-    }
-    $(document).on("click", "signUpButton"){
-        hideSignIn();
-        hideSignUp();
         var login =true;
         if(login){
-            
+            hideSignIn();
+            hideSignUp();
+            //redirect
+        }
+        else(){
+            console.log("loginFailed");
+        }
+    }
+    $(document).on("click", "signUpButton"){
+        
+        var login =true;
+        if(login){
+            hideSignIn();
+            hideSignUp();
+            //redirect
+        }
+        else(){
+            console.log("loginFailed");
         }
         
     }
