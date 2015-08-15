@@ -7,7 +7,28 @@
  */
 
 
-$mainPanel ="";
+$mainPanel ="
+
+    <div id='welcome'>
+    <p>Welcome to RealTC, <br />
+    a browser plugin which will allow for you and all your friends to collaborate in one single workspace!</p>
+    </div>
+    
+    <div id='about'>
+    <button type='button' onclick='showRTCOptions()' >About</button>
+    <caption>About (Us, The Application and Our Dream)</caption>
+    </div>
+    
+    <div id='getstarted'>
+    <button type='button' onclick='' >Get Started</button>
+    <caption>To get started, click on the button below!</caption>
+    </div>
+    
+    <div id='funding'>
+    <button type='button' onclick='' >Option 1</button>
+    <caption>To donate any money for whatsoever reason, click on the button below!</caption>
+    </div>
+";
 $bodyPanel ="
     <div>
         <br>

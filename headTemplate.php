@@ -12,7 +12,7 @@
 function headTemplate($title, $description, $style, $jsFile){
     echo "<head>
 <title></title>
-<link rel='stylesheet' type='text/css/' href='theme.css' />
+<link rel='stylesheet' type='text/css/' href='landing.css' />
 <script src='myscripts.js'></script>
 </head>
             ";
