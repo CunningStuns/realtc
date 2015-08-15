@@ -4,9 +4,10 @@ function bodyTemplate( $mainpanel, $sidepanel){
   <body>
   <div> id='headBar'>
 	    <a><img src=\"\\images\\logo.jpg\" alt='imgnotfound.jpg' /></a>";
-    echo realpath($_SERVER['DOCUMENT_ROOT']);
-    
-    echo"</div>
+//	echo $_SERVER["DOCUMENT_ROOT"];
+	echo realpath(dirname(__FILE__));
+
+	echo"</div>
 
 <div id='middle'>
 		<table id='content'>
