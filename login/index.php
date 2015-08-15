@@ -17,6 +17,8 @@ $mainPanel ="
       </div>
       
       <div id='getstarted'>
+      <caption>To get started, click on the button below!</caption>
+      <button type='button' onclick=''>Get Started</button>
       </div>
       
       <div id='about'>
