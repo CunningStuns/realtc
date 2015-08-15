@@ -21,7 +21,7 @@ $googleSignIn = '
                 console.log("Image URL: " + profile.getImageUrl());
                 console.log("Email: " + profile.getEmail());
                 
-                document.getElementById("getstarted").style.visibility = "hidden";
+                document.getElementById("getstarted").style.visibility = "visible";
                 document.getElementById("getstartedB").disabled = "";
                 
             }
