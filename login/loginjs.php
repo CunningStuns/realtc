@@ -28,7 +28,9 @@
     
   var showStartOptions = false;
   
-  $(document).on
+  $(document).on("click", "button#getstarted", function( ){
+    
+  }
 
     
 </script>

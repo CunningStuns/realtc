@@ -49,7 +49,7 @@ $mainPanel = "
       </tr>
       <tr>
         <td>
-          <button type='button' onclick='".$showStartOptions=true ."'>Get Started</button>
+          <button type='button' id='getstarted' onclick='".$showStartOptions=true ."'>Get Started</button>
         </td>
         <!-- Only show the following if user clicks 'get started' button -->";
         if ($showStartOptions==true) {
