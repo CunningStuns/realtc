@@ -1,7 +1,12 @@
+.g-signin2 {
+  float: center;
+}
+
 .mainLogo {
   width:160;
   height:100;
 }
+
 body {
   background-color: black;  
   
@@ -27,6 +32,11 @@ body {
 #mainview {
   border:2px;
   overflow: hidden;
+}
+
+#main {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #welcome {

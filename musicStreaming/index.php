@@ -85,6 +85,8 @@
     
     //changes on play
     TogetherJS.hub.on('play', function () {
+        var player = document.getElementById('player');
+        if (player)
         document.getElementById('player').play();
         playMusicChanges();
         return false;

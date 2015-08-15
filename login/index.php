@@ -11,7 +11,7 @@ require_once("../bodyTemplate.php");
 //require_once("../google.php");
 $googleSignIn = '
 
-        <script style = ""; src="https://apis.google.com/js/platform.js" async defer></script>
+        <script style = "text-align: center"; src="https://apis.google.com/js/platform.js" async defer></script>
         <div class="g-signin2" data-onsuccess="onSignIn"></div>
         <a href="#" onclick="signOut();">Sign out</a>
         
