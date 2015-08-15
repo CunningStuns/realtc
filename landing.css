@@ -1,5 +1,5 @@
 #loginup {
-  text-align: center;
+  float: right;
 }
 
 #loginup.g-signin2 {
@@ -62,6 +62,7 @@ body {
   height: 100%;
   width: 30%;
   float: right;
+  text-align: center;
 }
 
 #footer {

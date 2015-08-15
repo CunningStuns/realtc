@@ -12,10 +12,7 @@ require_once("../bodyTemplate.php");
 $googleSignIn = '
  
         <script  src="https://apis.google.com/js/platform.js" async defer></script>
-        <div id="loginup">
-          <div class="g-signin2" data-onsuccess="onSignIn"></div>
-          <a href="#" onclick="signOut();">Sign out</a>
-        </div>
+        
         
         <script type="text/javascript">
             function onSignIn(googleUser) {
@@ -77,6 +74,10 @@ $mainPanel = "
 ";
 $bodyPanel ="
     <div id='side'>
+    <div id=loginup">
+          <div class="g-signin2" data-onsuccess="onSignIn"></div>
+          <a href="#" onclick="signOut();">Sign out</a>
+        </div>
     " . $googleSignIn . "
     </div>
 ";
