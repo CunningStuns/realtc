@@ -60,7 +60,7 @@
 <div class="btn-group btn-group-justified" style="margin-right: auto; width: 70%;">
     <a class="btn btn-info user-color-pick bottom-button" style="width: 30%;">User Color</a>
     <a class="btn btn-success plus-size" style="width: 15%;">
-        <i class="fa fa-plus-square"></i>
+        <i class="fa fa-plus-square">Increase Brush Size</i>
     </a>
     <a class="btn btn-warning clear" style="width: 15%;">
         <i class="fa fa-times-circle"></i>

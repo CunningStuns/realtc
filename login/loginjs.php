@@ -9,19 +9,25 @@
 <script>
     $(document).on("click", "label#signUp"){
         
+        hideSignIn();
+        showSignUp();
         
-        var selector = $("input#up");
-        for(var i = 0; i < selector.length;i++){
-            selector[i].css("display", "inline");
-        }
         
     }
     $(document).on("click", "label#signIn"){
         
+        hideSignUp();
+        showSignIn();
+    }
+    $(document).on("click", "signUpButton"){
+        hideSignIn();
+        hideSignUp();
         
     }
-    $(document).on("click", "signUp"){
-        
+    $(document).on("click", "signInButton"){
+        hideSignIn();
+        hideSignUp();
+
     }
     function hideSignIn(){
         selector = $("input#in"){
@@ -44,6 +50,9 @@
         }
     }
     function showSignUp{
-        
+        var selector = $("input#up");
+        for(var i = 0; i < selector.length;i++){
+            selector[i].css("display", "inline");
+        }
     }
 </script>
