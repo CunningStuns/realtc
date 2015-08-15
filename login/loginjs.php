@@ -14,24 +14,36 @@
         for(var i = 0; i < selector.length;i++){
             selector[i].css("display", "inline");
         }
+        
+    }
+    $(document).on("click", "label#signIn"){
+        
+        
+    }
+    $(document).on("click", "signUp"){
+        
+    }
+    function hideSignIn(){
         selector = $("input#in"){
             for(var i = 0; i < selector.length;i++){
                 selector[i].css("display", "none");
             }
         }
     }
-    $(document).on("click", "label#signIn"){
+    function hideSignUp(){
         var selector = $("input#up");
         for(var i = 0; i < selector.length;i++){
             selector[i].css("display", "none");
         }
+    }
+    function showSignIn{
         selector = $("input#in"){
             for(var i = 0; i < selector.length;i++){
                 selector[i].css("display", "inline");
             }
         }
     }
-    $(document).on("click", "signUp"){
+    function showSignUp{
         
     }
 </script>
