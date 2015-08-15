@@ -16,6 +16,7 @@ headTemplate("Music Streaming", "Music Streaming", null, "includes.php");
 
 ?>
 
+
 <body>
 <div id='main' style='visibility:visible' disabled=''>
 <script src="https://togetherjs.com/togetherjs-min.js"></script>
@@ -95,10 +96,11 @@ headTemplate("Music Streaming", "Music Streaming", null, "includes.php");
     });
 </script>
 
+    <?php $main = '
 <br/>
 <br/>
 <audio id="player" controls="controls" onplay="playMusic();" onpause="pauseMusic();" onseeked="seekingMusic();">
     <source src="falcon.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
-</audio>
+</audio>'; ?>
 </body>
