@@ -25,37 +25,16 @@
     <script>
         
         function playMusic(){
-            document.getElementById('player').play();       
-            playMusicChanges();
+            TogetherJS.send({
+                type: 'play'
+            });
             return false;
         }
         
         function pauseMusic(){
-            document.getElementById("player").pause();
-            pauseMusicChanges();
-            return false;
-        }
-        
-        function playMusicChanges(){
-            TogetherJS.send({
-                type: 'play'
-            });
-            console.log("Am Playing Now!!!");
-            var button = $("#play");
-            button.text("Pause ME!!!");
-            button.attr("onclick", "pauseMusic()");
-            return false;
-        }
-        
-        function pauseMusicChanges(){
             TogetherJS.send({
                 type: 'pause'
             });
-            console.log("Am Pausing");
-            var button = $("#play");
-            button.text("PLAY ME!!!");
-            button.attr("onclick", "playMusic()");
-            
             return false;
         }
     </script>
@@ -107,9 +86,8 @@
 
 <br/>
 <br/>
-    <audio id="player" controls="controls" onplay="playMusicChanges();" onpause="pauseMusicChanges();">
+    <audio id="player" controls="controls" onplay="playMusic();" onpause="pauseMusic();">
         <source src="falcon.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
-    <button id="play" onclick="playMusic();">PLAY ME!!!</button>
 </body>
