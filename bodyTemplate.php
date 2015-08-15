@@ -30,4 +30,17 @@ function bodyTemplate( $mainpanel, $sidepanel){
 
 ";
 }
+
+function bodyTemplate2($mainPanel, $sidePanel){
+	echo "	<table style='width:100%' border='1' style='width:100%'>
+  				<tr>
+					<td>$mainPanel</td>
+					<td>Smith</td> 
+					<td>50</td>
+  				</tr>
+  				<tr>
+					<td>$sidePanel</td>
+  				</tr>
+</table> ";
+}
 ?>
