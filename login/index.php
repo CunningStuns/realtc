@@ -8,7 +8,7 @@
 
 require_once("../headTemplate.php");
 require_once("../bodyTemplate.php");
-
+require_once("../google.php");
 $googleSignIn = '
 <html>
     <head>

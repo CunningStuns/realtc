@@ -1,5 +1,6 @@
 .mainLogo {
-  
+  width:160;
+  height:120;
 }
 body {
   background-color: black;  
@@ -24,21 +25,21 @@ body {
 }
 
 #mainview {
-  
+  border:2px;
 }
-/*
+
 #welcome {
-  
+  /*To the middle line of the screen*/
 }
 
 #about {
-  
+  /*To the left of welcome <br/> the screen*/
 }
 
 
 #funding {
-  
-} */
+  /*To the right of welcome <br/> the screen*/
+}
 
 #sideview {
   height: 100%;
