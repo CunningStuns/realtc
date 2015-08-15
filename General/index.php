@@ -13,8 +13,7 @@ require_once("../bodyTemplate.php");
 
 $mainpanel ="
   <div id='main'>
-      //.generateIFrame.
-    blah main blah
+      <iframe></iframe>
     </div>
 ";
 
