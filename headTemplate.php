@@ -9,7 +9,7 @@
 //error_reporting(E_ALL | E_STRICT);
 //ini_set('display_errors', 'On');
 function headTemplate($title, $description, $style, $jsFile){
-    echo "<head>
+    echo "<head><script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
 <title></title>";
 
 include $jsFile;
