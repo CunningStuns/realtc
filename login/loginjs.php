@@ -8,5 +8,9 @@
 ?>
 
 <script>
-    
+    $(document).on("click", "button#about"){
+        var selector = $("input#" + );
+
+        selector.css("display", "inline");
+    }
 </script>
