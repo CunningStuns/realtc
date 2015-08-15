@@ -25,23 +25,19 @@
 
         function playMusic(){
             var player = document.getElementById('player');
-            if (player.paused) {
-                player.play();
-                TogetherJS.send({
-                    type: 'play'
-                });
-            }
+            TogetherJS.send({
+                type: 'play'
+            });
+        
             return false;
         }
 
         function pauseMusic(){
             var player = document.getElementById('player');
-            if (!player.paused) {
-                player.pause();
-                TogetherJS.send({
-                    type: 'pause'
-                });
-            }
+            TogetherJS.send({
+                type: 'pause'
+            });
+        
             return false;
         }
 
