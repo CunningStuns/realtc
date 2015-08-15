@@ -94,6 +94,8 @@ $mainPanel = "
           </div>
         </th>
       </tr>
+      </table>
+    </div>
       
 ";
 $bodyPanel ="
