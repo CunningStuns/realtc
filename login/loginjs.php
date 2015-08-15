@@ -8,13 +8,13 @@
 ?>
 
 <script>
-    $(document).on("click", "label#signUp")function({
+    $(document).on("click", "label#signUp")function(){
         console.log("inSignUp");
         hideSignIn();
         showSignUp();
         
     });
-    $(document).on("click", "label#signIn")function({
+    $(document).on("click", "label#signIn")function(){
         var login =true;
         if(login){
             hideSignIn();
@@ -25,7 +25,7 @@
             console.log("loginFailed");
         }
     });
-    $(document).on("click", "signUpButton")function({
+    $(document).on("click", "signUpButton")function(){
         
         var login =true;
         if(login){
@@ -38,7 +38,7 @@
         }
         
     });
-    $(document).on("click", "signInButton")function({
+    $(document).on("click", "signInButton")function(){
         hideSignIn();
         hideSignUp();
 

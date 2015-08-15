@@ -3,7 +3,7 @@ function bodyTemplate( $mainpanel, $sidepanel){
   echo "
   <body>
   <div> id='headBar'>
-	    <a><img src=\"\\images\\logo.jpg\" alt='imgnotfound.jpg' /></a>";
+	    <a><img src='" . realpath(dirname(__FILE__)) . "\\images\\logo.jpg\' alt='imgnotfound.jpg' /></a>";
 //	echo $_SERVER["DOCUMENT_ROOT"];
 	echo realpath(dirname(__FILE__));
 
