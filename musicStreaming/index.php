@@ -115,7 +115,7 @@
 
 <br/>
 <br/>
-    <audio id="player" onplay="playMusic();" onpause="pauseMusic();" ontimeupdate="seekingMusic();">
+    <audio id="player">
         <source src="falcon.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
