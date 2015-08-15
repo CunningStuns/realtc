@@ -1,10 +1,8 @@
 <?php
 
-if(Input::exists('get')) {
+if(!empty($_GET)) {
 
-$paypalAmount = Input::get("amount");
-$newTaxName = Input::get("taxName");
-$newAmount = Input::get("amount");
+$paypalAmount = $_GET['amount'];
     
     $METHOD="SetExpressCheckout";
     $VERSION=109.0;
