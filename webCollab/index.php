@@ -21,13 +21,18 @@
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script>
+        $("a").on("click", function () {
+            alert("CliCKED!!!");
+        })
+    </script>
 </head>
 
 <body>
 <script src="https://togetherjs.com/togetherjs-min.js"></script>
 <a onclick="TogetherJS(this); return false;"><img src="https://togetherjs.com/images/start-togetherjs-blue.png" style="width: 135px" /></a>
 
-<iframe src="http://www.w3schools.com"></iframe>
+<iframe id="iframe" src="http://www.w3schools.com" style="width: 50%; height: 50%"></iframe>
 
 <script>
 

@@ -34,13 +34,13 @@ $googleSignIn = '
   
 ';
 $mainPanel = "
-      <script>
+      <!--<script>
             <?var $showStartOptions = false;?>
             function showStartOptions()
             {
             <? $showStartOptions==true; ?>
             }
-        </script>
+        </script> -->
     <div id='main'>
       <div id='welcome'>
       <h1>Welcome to RealTC, <br />
@@ -49,7 +49,7 @@ $mainPanel = "
       
       <div id='getstarted'>
           <h3>To get started, click on the button below!</h3>
-          <button type='button' class='toggleShow' id='getstartedB' href='#showOptions' onclick='<script>$showStartOptions=true;</script>'>Get Started</button>
+          <button type='button' class='toggleShow' id='getstartedB' href='#showOptions' onclick='<!--<script>$showStartOptions=true;</script>-->'>Get Started</button>
       </div>
       
       <table id='line2'>
@@ -70,8 +70,8 @@ $mainPanel = "
       </tr>
       </table>
     </div>
-      
 ";
+
 $bodyPanel ="
     <div id='side'>
     <div id='loginup'>
