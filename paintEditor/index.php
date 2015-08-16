@@ -332,13 +332,27 @@
         });
     });
     
-    function loadImage(){
+    function addingImage(url){
         var img = new Image();
 
         img.onload = function() {
             context.drawImage(img, 69, 50);
         };
-        img.src = document.getElementById('sourceURL').value;
-        
+        img.src = url;
     }
+    
+    function loadImage(){
+        var src = document.getElementById('sourceURL').value;
+        
+        addingImage(src);
+        
+        TogetherJS.send({
+            type: 'img',
+            url: src
+        });
+    }
+
+    TogetherJS.hub.on('img', function (msg) {
+        addingImage(msg.url);
+    });
 </script>
