@@ -13,7 +13,7 @@ function bodyTemplate( $mainpanel, $sidepanel){
 		<table id='content'>
 	    <tr>
 	      <th width='80%'><!--Empty Table Headers, since we won't need these --></th>
-	      <th width='20%'></th>
+	      <th width='10%'></th>
       </tr>
       <tr>
 	      <td id='mainview'>";
