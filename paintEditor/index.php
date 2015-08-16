@@ -363,7 +363,7 @@
     function exportToPNG(){
         var button = document.getElementById('btn-download');
         button.addEventListener('click', function (e) {
-            var dataURL = context.toDataURL('image/png');
+            var dataURL = document.getElementById('sketch').toDataURL('image/png');
             console.log(dataURL);
             button.href = dataURL;
         });
@@ -379,6 +379,6 @@
      * parameter (=the link element), ID of the canvas and a filename.
      */
     document.getElementById('download').addEventListener('click', function() {
-        downloadCanvas(this, 'canvas', 'test.png');
+        downloadCanvas(this, 'sketch', 'test.png');
     }, false);
 </script>
