@@ -28,7 +28,7 @@ headTemplate("Music Streaming", "Music Streaming", null, "includes.php");
       </div>
   <?php
         echo "<select name='files'>";
-        $files = array_map("htmlspecialchars", scandir("/upload/"));
+        $files = array_map("htmlspecialchars", scandir("..\\upload\\"));
         foreach ($files as $file)
             echo "<option value='$file'>$file</option>";
         echo "</select>";
