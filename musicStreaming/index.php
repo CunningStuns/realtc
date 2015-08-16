@@ -25,7 +25,7 @@ headTemplate("Music Streaming", "Music Streaming", null, "includes.php");
           </div>
       </div>
   <?php
-        echo "<select name='files'>";
+        echo "<select name='files' onselect='changeMusicTrack(this.value)'>";
         $files = array_map("htmlspecialchars", scandir("..\\upload\\"));
         foreach ($files as $file){
             $ext = substr($file,-3);
@@ -60,7 +60,10 @@ headTemplate("Music Streaming", "Music Streaming", null, "includes.php");
       }
     </script>
 <script>
+function changeMusicTrack(value){
+    
 
+}
 
     // Hello is sent from every newly connected user, this way they will receive what has already been drawn:
     TogetherJS.hub.on('togetherjs.hello', function () {

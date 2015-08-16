@@ -60,6 +60,7 @@
 
 <label for="sourceURL">Source URL For Images: </label><input type="text" id="sourceURL">
 <button onclick="loadImage();">Submit Image</button>
+<a href="#" class="button" id="btn-download">Download Image</a>
 
 
 <div id='side'>
@@ -359,8 +360,10 @@
     });
     
     function exportToPNG(){
-        var dataURL = context.toDataURL();
-        
-        
+        var button = document.getElementById('btn-download');
+        button.addEventListener('click', function (e) {
+            var dataURL = canvas.toDataURL('image/png');
+            button.href = dataURL;
+        });
     }
 </script>
