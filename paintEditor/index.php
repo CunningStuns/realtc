@@ -359,7 +359,7 @@
     });
     
     function exportToPNG(){
-        var daraURL = context.toDataURL();
+        var dataURL = context.toDataURL();
         
         
     }
