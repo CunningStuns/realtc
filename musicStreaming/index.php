@@ -90,8 +90,10 @@ headTemplate("Music Streaming", "Music Streaming", null, "includes.php");
     //changes on seek
     TogetherJS.hub.on('seek', function(msg) {
         var player = document.getElementById('player');
-        player.currentTime = msg.currentTime;
-        playMusic();
+        if (player.paused) {
+            player.currentTime = msg.currentTime;
+            playMusic();
+        }
         return false;
     });
 </script>
