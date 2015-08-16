@@ -60,8 +60,6 @@
 
 <label for="sourceURL">Source URL For Images: </label><input type="text" id="sourceURL">
 <button onclick="loadImage();">Submit Image</button>
-<a href="#" class="button" id="btn-download" download="my-file-name.png">Download</a>
-<a id="download">Download as image</a>
 
 
 <div id='side'>
@@ -359,26 +357,4 @@
 
         addingImage(src);
     });
-    
-    function exportToPNG(){
-        var button = document.getElementById('btn-download');
-        button.addEventListener('click', function (e) {
-            var dataURL = document.getElementById('sketch').toDataURL('image/png');
-            console.log(dataURL);
-            button.href = dataURL;
-        });
-    }
-
-    function downloadCanvas(link, canvasId, filename) {
-        link.href = document.getElementById(canvasId).toDataURL();
-        link.download = filename;
-    }
-
-    /**
-     * The event handler for the link's onclick event. We give THIS as a
-     * parameter (=the link element), ID of the canvas and a filename.
-     */
-    document.getElementById('download').addEventListener('click', function() {
-        downloadCanvas(this, 'sketch', 'test.png');
-    }, false);
 </script>
