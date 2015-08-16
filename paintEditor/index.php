@@ -362,7 +362,7 @@
     function exportToPNG(){
         var button = document.getElementById('btn-download');
         button.addEventListener('click', function (e) {
-            var dataURL = canvas.toDataURL('image/png');
+            var dataURL = context.toDataURL('image/png');
             button.href = dataURL;
         });
     }
