@@ -64,7 +64,16 @@
 </head>
 
 <body>
-  <?php
+<div id='main' style='visibility:visible' disabled=''>
+<script src="https://togetherjs.com/togetherjs-min.js"></script>
+<a onclick="TogetherJS(this); return false;"><img src="https://togetherjs.com/images/start-togetherjs-blue.png" style="width: 135px" /></a>
+    <div id='side'>
+      <div id='loginup'>
+            <div class='g-signin2' data-onsuccess='onSignIn'></div>
+            <a href='#' onclick='signOut();'>Sign out</a>
+          </div>
+      </div>
+        <?php
         echo "<select name='files' onchange='changeMusicTrack(this.value)'>";
         $files = array_map("htmlspecialchars", scandir("..\\upload\\"));
         foreach ($files as $file){
@@ -76,15 +85,6 @@
         }
         echo "</select>";
 ?>
-<div id='main' style='visibility:visible' disabled=''>
-<script src="https://togetherjs.com/togetherjs-min.js"></script>
-<a onclick="TogetherJS(this); return false;"><img src="https://togetherjs.com/images/start-togetherjs-blue.png" style="width: 135px" /></a>
-    <div id='side'>
-      <div id='loginup'>
-            <div class='g-signin2' data-onsuccess='onSignIn'></div>
-            <a href='#' onclick='signOut();'>Sign out</a>
-          </div>
-      </div>
     <script type="text/javascript">
         function onSignIn(googleUser) {
             var profile = googleUser.getBasicProfile();
