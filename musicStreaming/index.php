@@ -30,7 +30,8 @@ headTemplate("Music Streaming", "Music Streaming", null, "includes.php");
         echo "<select name='files'>";
         $files = array_map("htmlspecialchars", scandir("..\\upload\\"));
         foreach ($files as $file){
-            $ext = trim($file->getExtension());
+            $ext = substr($file,-3);
+            echo $ext;
             if($ext="mp3"){
                 echo "<option value='$file'>$file</option>";
             }
