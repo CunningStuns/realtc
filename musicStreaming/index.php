@@ -65,7 +65,6 @@ function changeMusicTrack(value){
     var audio = document.getElementById('player');
     document.getElementById('musicid').src = "/upload/"+value;
     player.load();
-    player.play();
 }
 
     // Hello is sent from every newly connected user, this way they will receive what has already been drawn:
