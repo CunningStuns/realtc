@@ -338,7 +338,7 @@
         console.log(document.getElementById('sourceURL').value);
 
         img.onload = function() {
-            context.drawImage(imageObj, 69, 50);
+            context.drawImage(img, 69, 50);
         };
         img.src = document.getElementById('sourceURL').value;
         
