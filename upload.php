@@ -28,7 +28,7 @@ if(in_array($extension, $allowedExts))
       }
     else
       {
-       move_uploaded_file($_FILES["file"]["tmp_name"],"\\realtc\\upload\\" . $_FILES["file"]["name"]);
+       move_uploaded_file($_FILES["file"]["tmp_name"],realpath(dirname(__FILE__))."\\upload\\". $_FILES["file"]["name"]);
       echo "Stored in: " . "upload/" . $_FILES["file"]["name"];
       }
     }
