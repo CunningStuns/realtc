@@ -32,7 +32,7 @@ headTemplate("Music Streaming", "Music Streaming", null, "includes.php");
         foreach ($files as $file){
             $ext = substr($file,-3);
             echo $ext;
-            if($ext=="mp3"){
+            if($ext==="mp3"){
                 echo "<option value='$file'>$file</option>";
             }
         }
