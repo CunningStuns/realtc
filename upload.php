@@ -7,7 +7,7 @@ $allowedExts = array("jpg", "jpeg", "gif", "png", "mp3", "mp4");
 $fileName = $_FILES['file']['name'];
 $extension = substr($fileName, strrpos($fileName, '.') + 1); // getting the info about the image to get its extension
  
-/*if ((($_FILES["file"]["type"] == "video/mp4")|| ($_FILES["file"]["type"] == "audio/mp3")|| ($_FILES["file"]["type"] == "audio/wma")|| ($_FILES["file"]["type"] == "image/pjpeg")|| ($_FILES["file"]["type"] == "image/gif")|| ($_FILES["file"]["type"] == "image/jpeg")) && ($_FILES["file"]["size"] < 200000) && in_array($extension, $allowedExts))*/
+((($_FILES["file"]["type"] == "video/mp4")|| ($_FILES["file"]["type"] == "audio/mp3")|| ($_FILES["file"]["type"] == "audio/wma")|| ($_FILES["file"]["type"] == "image/pjpeg")|| ($_FILES["file"]["type"] == "image/gif")|| ($_FILES["file"]["type"] == "image/jpeg")) && ($_FILES["file"]["size"] < 600000) && in_array($extension, $allowedExts))
  
 if(in_array($extension, $allowedExts))
   {
