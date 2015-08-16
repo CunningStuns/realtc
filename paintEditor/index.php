@@ -56,6 +56,10 @@
         
     </a>
 </div>
+
+
+<inp
+
 <div id='side'>
       <div id='loginup'>
             <div class='g-signin2' data-onsuccess='onSignIn'></div>
