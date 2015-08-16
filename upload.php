@@ -9,7 +9,7 @@ $extension = substr($fileName, strrpos($fileName, '.') + 1); // getting the info
  
 /*if ((($_FILES["file"]["type"] == "video/mp4")|| ($_FILES["file"]["type"] == "audio/mp3")|| ($_FILES["file"]["type"] == "audio/wma")|| ($_FILES["file"]["type"] == "image/pjpeg")|| ($_FILES["file"]["type"] == "image/gif")|| ($_FILES["file"]["type"] == "image/jpeg")) && ($_FILES["file"]["size"] < 200000) && in_array($extension, $allowedExts))*/
  
-if((in_array($extension, $allowedExts))
+if(in_array($extension, $allowedExts))
   {
   if ($_FILES["file"]["error"] > 0)
     {
