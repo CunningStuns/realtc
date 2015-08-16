@@ -62,7 +62,7 @@ headTemplate("Music Streaming", "Music Streaming", null, "includes.php");
 <script>
 function changeMusicTrack(value){
     console.log(value);
-    document.getElementById('musicid').source = "/upload/"+value;
+    document.getElementById('musicid').src = "/upload/"+value;
 }
 
     // Hello is sent from every newly connected user, this way they will receive what has already been drawn:
