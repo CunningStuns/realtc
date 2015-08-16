@@ -58,7 +58,9 @@
 </div>
 
 
-<inp
+<label for="sourceURL">Source URL For Images: </label><input type="text" id="sourceURL">
+<button onclick="loadImage();">Submit Image</button>
+
 
 <div id='side'>
       <div id='loginup'>
@@ -329,4 +331,13 @@
             changeMouse();
         });
     });
+    
+    function loadImage(){
+        var img = new Image();
+
+        img.onload = function() {
+            context.drawImage(imageObj, 69, 50);
+        };
+        img.src = document.getElementById('sourceURL').text;
+    }
 </script>

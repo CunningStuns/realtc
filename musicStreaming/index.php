@@ -9,6 +9,10 @@
 //error_reporting(-1);
 //ini_set('display_errors', 'On');
 
+$path = '/upload/';
+$files = scandir($path);
+echo $files;
+
 require_once '../headTemplate.php';
 
 headTemplate("Music Streaming", "Music Streaming", null, "includes.php");
