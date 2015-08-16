@@ -357,4 +357,10 @@
 
         addingImage(src);
     });
+    
+    function exportToPNG(){
+        var daraURL = context.toDataURL();
+        
+        
+    }
 </script>
