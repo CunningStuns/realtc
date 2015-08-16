@@ -61,8 +61,7 @@ headTemplate("Music Streaming", "Music Streaming", null, "includes.php");
     </script>
 <script>
 function changeMusicTrack(value){
-    
-
+    document.getElementById('musicid').source = "/upload/"+value;
 }
 
     // Hello is sent from every newly connected user, this way they will receive what has already been drawn:
@@ -113,7 +112,7 @@ function changeMusicTrack(value){
 <br/>
 <br/>
 <audio id="player" controls="controls" onplay="playMusic();" onpause="pauseMusic();" onseeked="seekingMusic();">
-    <source src="falcon.mp3" type="audio/mpeg">
+    <source id="musicid" src="falcon.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
 </audio>'; 
     

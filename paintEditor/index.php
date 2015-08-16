@@ -60,7 +60,7 @@
 
 <label for="sourceURL">Source URL For Images: </label><input type="text" id="sourceURL">
 <button onclick="loadImage();">Submit Image</button>
-<a href="#" class="button" id="btn-download">Download Image</a>
+<a href="#" class="button" id="btn-download" download="my-file-name.png">Download</a>
 
 
 <div id='side'>
