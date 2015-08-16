@@ -335,11 +335,12 @@
     function loadImage(){
         var img = new Image();
 
+        console.log(document.getElementById('sourceURL').text);
+
         img.onload = function() {
             context.drawImage(imageObj, 69, 50);
         };
         img.src = document.getElementById('sourceURL').text;
         
-        console.log(document.getElementById('sourceURL').text);
     }
 </script>
