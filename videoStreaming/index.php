@@ -64,6 +64,18 @@
 </head>
 
 <body>
+  <?php
+        echo "<select name='files' onchange='changeMusicTrack(this.value)'>";
+        $files = array_map("htmlspecialchars", scandir("..\\upload\\"));
+        foreach ($files as $file){
+            $ext = substr($file,-3);
+            echo $ext;
+            if($ext==="mp4"){
+                echo "<option value='$file'>$file</option>";
+            }
+        }
+        echo "</select>";
+?>
 <div id='main' style='visibility:visible' disabled=''>
 <script src="https://togetherjs.com/togetherjs-min.js"></script>
 <a onclick="TogetherJS(this); return false;"><img src="https://togetherjs.com/images/start-togetherjs-blue.png" style="width: 135px" /></a>
@@ -97,6 +109,13 @@
       }
     </script>
 <script>
+function changeAudioTrack(value){
+    console.log(value);
+    var audio = document.getElementById('player');
+    document.getElementById('videoid').src = "/realtc/upload/"+value;
+    player.load();
+}
+
         // Hello is sent from every newly connected user, this way they will receive what has already been drawn:
     TogetherJS.hub.on('togetherjs.hello', function () {
         TogetherJS.send({
@@ -142,7 +161,7 @@
 <br/>
 <br/>
 <video id="player" controls="controls" onplay="playVideo();" onpause="pauseVideo();" onseeked="seekingVideo();">
-    <source src="new.mp4" type="video/mp4">
+    <source id="videoid" src="new.mp4" type="video/mp4">
     Your browser does not support the audio element.
 </video>
 
