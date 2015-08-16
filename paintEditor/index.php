@@ -61,6 +61,7 @@
 <label for="sourceURL">Source URL For Images: </label><input type="text" id="sourceURL">
 <button onclick="loadImage();">Submit Image</button>
 <a href="#" class="button" id="btn-download" download="my-file-name.png">Download</a>
+<a id="download">Download as image</a>
 
 
 <div id='side'>
@@ -363,6 +364,7 @@
         var button = document.getElementById('btn-download');
         button.addEventListener('click', function (e) {
             var dataURL = context.toDataURL('image/png');
+            console.log(dataURL);
             button.href = dataURL;
         });
     }
