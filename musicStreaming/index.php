@@ -25,7 +25,7 @@ headTemplate("Music Streaming", "Music Streaming", null, "includes.php");
           </div>
       </div>
   <?php
-        echo "<select name='files' onselect='changeMusicTrack(this.value)'>";
+        echo "<select name='files' onchange='changeMusicTrack(this.value)'>";
         $files = array_map("htmlspecialchars", scandir("..\\upload\\"));
         foreach ($files as $file){
             $ext = substr($file,-3);
