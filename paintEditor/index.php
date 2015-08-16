@@ -335,8 +335,6 @@
     function loadImage(){
         var img = new Image();
 
-        console.log(document.getElementById('sourceURL').value);
-
         img.onload = function() {
             context.drawImage(img, 69, 50);
         };

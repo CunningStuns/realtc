@@ -8,11 +8,6 @@
 
 //error_reporting(-1);
 //ini_set('display_errors', 'On');
-
-$path = $_SERVER["DOCUMENT_ROOT"]."/upload/";
-$files = scandir($path);
-echo $files;
-
 require_once '../headTemplate.php';
 
 headTemplate("Music Streaming", "Music Streaming", null, "includes.php");
@@ -31,6 +26,13 @@ headTemplate("Music Streaming", "Music Streaming", null, "includes.php");
             <a href='#' onclick='signOut();'>Sign out</a>
           </div>
       </div>
+  <?php
+        echo "<select name='files'>";
+        $files = array_map("htmlspecialchars", scandir("/uploads/"));
+        foreach ($files as $file)
+            echo "<option value='$file'>$file</option>";
+        echo "</select>";
+?>
     <script type="text/javascript">
         function onSignIn(googleUser) {
             var profile = googleUser.getBasicProfile();
@@ -54,7 +56,6 @@ headTemplate("Music Streaming", "Music Streaming", null, "includes.php");
           });
       }
     </script>
-
 <script>
 
 
