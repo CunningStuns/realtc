@@ -74,7 +74,7 @@
           </div>
       </div>
         <?php
-        echo "<select name='files' onchange='changeMusicTrack(this.value)'>";
+        echo "<select name='files' onchange='changeVideoTrack(this.value)'>";
         $files = array_map("htmlspecialchars", scandir("..\\upload\\"));
         foreach ($files as $file){
             $ext = substr($file,-3);
@@ -109,7 +109,7 @@
       }
     </script>
 <script>
-function changeAudioTrack(value){
+function changeVideoTrack(value){
     console.log(value);
     var audio = document.getElementById('player');
     document.getElementById('videoid').src = "/realtc/upload/"+value;
