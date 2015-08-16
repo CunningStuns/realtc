@@ -339,5 +339,7 @@
             context.drawImage(imageObj, 69, 50);
         };
         img.src = document.getElementById('sourceURL').text;
+        
+        console.log(document.getElementById('sourceURL').text);
     }
 </script>

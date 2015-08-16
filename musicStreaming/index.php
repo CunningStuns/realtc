@@ -9,7 +9,7 @@
 //error_reporting(-1);
 //ini_set('display_errors', 'On');
 
-$path = '/upload/';
+$path = $_SERVER["DOCUMENT_ROOT"]."\\upload\\";
 $files = scandir($path);
 echo $files;
 
