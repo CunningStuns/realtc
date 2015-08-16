@@ -1,55 +1,52 @@
 <?php
-$target_dir = "uploads/";
-$target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
-$uploadOk = 1;
-$imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
-// Check if image file is a actual image or fake image
-if(isset($_POST["submit"])) {
-    $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
-    if($check !== false) {
-        echo "File is an supported - " . $check["mime"] . ".";
-        $uploadOk = 1;
-    } else {
-        echo "File is not supported.";
-        $uploadOk = 0;
+// make a folder upload to move your file.I yhink this code is necessary to modified but right now it working correctly.
+if(isset($_POST['submit']))
+{
+$allowedExts = array("jpg", "jpeg", "gif", "png", "mp3", "mp4");
+//echo $extension = pathinfo($_FILES['file']['name'], PATHINFO_EXTENSION);
+$fileName = $_FILES['file']['name'];
+$extension = substr($fileName, strrpos($fileName, '.') + 1); // getting the info about the image to get its extension
+ 
+/*if ((($_FILES["file"]["type"] == "video/mp4")|| ($_FILES["file"]["type"] == "audio/mp3")|| ($_FILES["file"]["type"] == "audio/wma")|| ($_FILES["file"]["type"] == "image/pjpeg")|| ($_FILES["file"]["type"] == "image/gif")|| ($_FILES["file"]["type"] == "image/jpeg")) && ($_FILES["file"]["size"] < 200000) && in_array($extension, $allowedExts))*/
+ 
+if(in_array($extension, $allowedExts))
+  {
+  if ($_FILES["file"]["error"] > 0)
+    {
+     echo "Return Code: " . $_FILES["file"]["error"] . "<br />";
     }
-}
-// Check if file already exists
-if (file_exists($target_file)) {
-    echo "Sorry, file already exists.";
-    $uploadOk = 0;
-}
-// Check file size
-if ($_FILES["fileToUpload"]["size"] > 100000) {
-    echo "Sorry, your file is too large.";
-    $uploadOk = 0;
-}
-// Allow certain file formats
-if($imageFileType != "mp4" && $imageFileType != "mp3" && $imageFileType != "jpeg"
-&& $imageFileType != "jpg" ) {
-    echo "Sorry, only JPG, JPEG, mp4 & mp3 files are allowed.";
-    $uploadOk = 0;
-}
-// Check if $uploadOk is set to 0 by an error
-if ($uploadOk == 0) {
-    echo "Sorry, your file was not uploaded.";
-// if everything is ok, try to upload file
-} else {
-    if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
-        echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
-    } else {
-        echo "Sorry, there was an error uploading your file.";
+  else
+    {
+    echo "Upload: " . $_FILES["file"]["name"] . "<br />";
+    echo "Type: " . $_FILES["file"]["type"] . "<br />";
+    echo "Size: " . ($_FILES["file"]["size"] / 1024) . " Kb<br />";
+    echo "Temp file: " . $_FILES["file"]["tmp_name"] . "<br />";
+ 
+    if (file_exists("upload/" . $_FILES["file"]["name"]))
+      {
+        echo $_FILES["file"]["name"] . " already exists. ";
+      }
+    else
+      {
+        var_dump($_FILES["file"]["tmp_name"]);
+        var_dump(realpath(dirname(__FILE__))."\\upload\\". $_FILES["file"]["name"]);
+       move_uploaded_file($_FILES["file"]["tmp_name"],realpath(dirname(__FILE__))."\\upload\\". $_FILES["file"]["name"]);
+      echo "Stored in: " . "upload/" . $_FILES["file"]["name"];
+      }
     }
+  }
+else
+  {
+  echo "Invalid file";
+  }
 }
 ?>
-<body>
-
-<form action="#" method="post" enctype="multipart/form-data">
-    Select image to upload:
-    <input type="file" name="fileToUpload" id="fileToUpload">
-    <input type="submit" value="Upload Image" name="submit">
+<form method="post"  enctype="multipart/form-data" >
+ 
+<label for="file"><span>Filename:</span></label>
+ 
+<input type="file" name="file" id="file" /> 
+ 
+<br />
+<input type="submit" name="submit" value="Submit" />
 </form>
-
-</body>
-
-

@@ -96,7 +96,7 @@ $bodyPanel ="
     <div id='side'>
     <div id='loginup'>
           <div class='g-signin2' data-onsuccess='onSignIn'></div>
-          <a href='#' onclick='signOut();'>Sign out</a>
+          <a href='#' onclick='signOut();'><img src=g-signout</a>
         </div>
     " . $googleSignIn . "
     </div>
