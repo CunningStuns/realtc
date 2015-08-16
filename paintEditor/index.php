@@ -353,6 +353,8 @@
     }
 
     TogetherJS.hub.on('img', function (msg) {
-        loadImage();
+        var src = document.getElementById('sourceURL').value;
+
+        addingImage(src);
     });
 </script>
