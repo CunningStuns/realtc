@@ -63,7 +63,7 @@ headTemplate("Music Streaming", "Music Streaming", null, "includes.php");
 function changeMusicTrack(value){
     console.log(value);
     var audio = document.getElementById('player');
-    document.getElementById('musicid').src = "/upload/"+value;
+    document.getElementById('musicid').src = "/realtc/upload/"+value;
     player.load();
 }
 
