@@ -61,6 +61,7 @@ headTemplate("Music Streaming", "Music Streaming", null, "includes.php");
     </script>
 <script>
 function changeMusicTrack(value){
+    console.log(value);
     document.getElementById('musicid').source = "/upload/"+value;
 }
 
